@@ -4,6 +4,8 @@ import './globals.css'
 import { siteConfig } from '@/data/site-config'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { SkipLink } from '@/components/SkipLink'
+import { ScrollToTop } from '@/components/ScrollToTop'
 
 const literata = Literata({
   subsets: ['latin'],
@@ -29,11 +31,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={literata.className}>
       <body className="min-h-screen flex flex-col">
+        <SkipLink />
         <Header />
-        <main className="flex-1">
+        <main id="main-content" className="flex-1">
           {children}
         </main>
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   )
