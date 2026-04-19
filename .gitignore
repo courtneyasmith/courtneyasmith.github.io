@@ -42,6 +42,7 @@ next-env.d.ts
 reference/
 src/documentation/
 src/scripts/
+src/utils/
 
 # AI and sync config files for website development assistance tools (Claude Code, Cursor, Codex)
 .claudeignore

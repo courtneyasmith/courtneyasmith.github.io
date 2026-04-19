@@ -17,10 +17,6 @@ function highlightAuthor(authors: string, name: string = 'Smith CA'): React.Reac
   )
 }
 
-function getPubMedUrl(pmid: string): string {
-  return `https://pubmed.ncbi.nlm.nih.gov/${pmid}/`
-}
-
 function getPublicationUrl(publication: Publication): string | null {
   if (publication.url) return publication.url
   if (publication.pmid) return `https://pubmed.ncbi.nlm.nih.gov/${publication.pmid}/`
