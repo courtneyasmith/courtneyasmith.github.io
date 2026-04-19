@@ -27,7 +27,7 @@ export default function ResearchPage() {
       <ScrollReveal>
         <PageHeader
           title="Research"
-          intro="My work focuses on computational approaches to dermatologic care, with emphasis on populations underrepresented in existing research."
+          intro="Focused on computational approaches to dermatologic care, with emphasis on populations underrepresented in existing research."
         />
       </ScrollReveal>
 
