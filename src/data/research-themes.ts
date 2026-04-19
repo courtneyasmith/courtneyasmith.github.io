@@ -20,7 +20,7 @@ export const researchThemes: ResearchDirection[] = [
     title: 'Epidemiology in Dermatology',
     description:
       'Population-level studies using large healthcare databases to characterize disease burden, risk factors, and health behaviors.',
-    focus: 'Multi-site cohort studies with validated case definitions',
+    focus: 'Informing clinical care and public health strategies',
     keyWork: ['Smoking in skin cancer survivors (JAAD)', 'HS prevalence in youth (JID)'],
     relatedPublicationIds: [
       'smoking-cessation-and-persistence-in-skin-cancer-survivors-a-cross-sectional-stu',
@@ -33,7 +33,7 @@ export const researchThemes: ResearchDirection[] = [
     title: 'Clinical Decision Support & NLP',
     description:
       'Development of natural language processing pipelines for prescription pattern analysis, telemedicine optimization, and clinical decision support in dermatology.',
-    focus: 'Applied informatics for care delivery improvement',
+    focus: 'Applied informatics for improvement in care access, delivery, and outcomes',
     keyWork: ['Isotretinoin telemedicine outcomes (JAAD Int)', 'Prescription adherence analysis'],
     relatedPublicationIds: [
       'video-synchronous-isotretinoin-management-is-associated-with-lower-risk-of-patie',
@@ -46,7 +46,7 @@ export const researchThemes: ResearchDirection[] = [
     title: 'Health Equity in Dermatology',
     description:
       'Research on care access, treatment environments, and survivorship resources for sexual and gender minority patients with skin cancer.',
-    focus: 'Addressing disparities where data gaps limit clinical guidance',
+    focus: 'Addressing the need for data to inform clinical guidance for underrepresented patient populations',
     keyWork: ['SGM skin cancer survivorship (Arch Derm Res)', 'Healthcare barriers (OUT Survey)'],
     relatedPublicationIds: [
       'skin-cancer-treatment-environment-and-survivorship-resources-among-sexual-and-ge',
