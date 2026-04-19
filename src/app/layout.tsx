@@ -33,7 +33,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col">
         <SkipLink />
         <Header />
-        <main id="main-content" className="flex-1">
+        <main id="main-content" tabIndex={-1} className="flex-1 outline-none">
           {children}
         </main>
         <Footer />

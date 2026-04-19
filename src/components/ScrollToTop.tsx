@@ -1,19 +1,42 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 
 export function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false)
+  const isVisibleRef = useRef(false)
+  const ticking = useRef(false)
+  const rafId = useRef<number | null>(null)
 
   useEffect(() => {
+    const updateVisibility = () => {
+      const nextVisible = window.scrollY > 400
+
+      if (nextVisible !== isVisibleRef.current) {
+        isVisibleRef.current = nextVisible
+        setIsVisible(nextVisible)
+      }
+
+      ticking.current = false
+      rafId.current = null
+    }
+
     const handleScroll = () => {
-      setIsVisible(window.scrollY > 400)
+      if (!ticking.current) {
+        rafId.current = requestAnimationFrame(updateVisibility)
+        ticking.current = true
+      }
     }
 
     window.addEventListener('scroll', handleScroll, { passive: true })
-    handleScroll() // Check initial position
+    updateVisibility()
 
-    return () => window.removeEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      if (rafId.current !== null) {
+        cancelAnimationFrame(rafId.current)
+      }
+    }
   }, [])
 
   const scrollToTop = useCallback(() => {

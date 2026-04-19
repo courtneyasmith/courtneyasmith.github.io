@@ -130,8 +130,13 @@
     transition: top 150ms ease-out;
   }
 
-  .skip-link:focus {
+  .skip-link:focus-visible {
     top: 1rem;
+  }
+
+  /* Skip link target - scroll offset for fixed header */
+  #main-content {
+    scroll-margin-top: 5rem;
   }
 }
 
