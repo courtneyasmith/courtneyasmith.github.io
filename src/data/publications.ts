@@ -10,6 +10,7 @@ export const publications: Publication[] = [
     "authors": "Smith CA, Kaabi O, Manatunga AK, Lash TL, Silverberg MJ, Getahun D, Vupputuri S, McCracken CE, Chen SC, Tangpricha V, Goodman M, Yeung H",
     "journal": "JAMA Dermatology",
     "year": 2026,
+    "doi": "10.1001/jamadermatol.2025.5597",
     "pmid": "41563779",
     "tags": [
       "epidemiology"
@@ -24,6 +25,7 @@ export const publications: Publication[] = [
     "authors": "Smith CA, Yeung H, Cheng C, Hogeling M",
     "journal": "JID",
     "year": 2026,
+    "doi": "10.1016/S0022-202X(26)00628-7",
     "tags": [
       "epidemiology"
     ],
@@ -37,6 +39,7 @@ export const publications: Publication[] = [
     "authors": "Smith CA, Kaabi O, Murdock A, Joshi K, Tangpricha V, Goodman M, Baranowski MLH, Orenstein LAV, Yeung H",
     "journal": "JID",
     "year": 2026,
+    "doi": "10.1016/s0022-202x(26)00546-4",
     "tags": [
       "epidemiology"
     ],
@@ -50,6 +53,7 @@ export const publications: Publication[] = [
     "authors": "Smith CA, Gunasti J, Kaabi O, Murdock A, Manatunga AK, Lash TL, Silverberg MJ, Getahun D, Vupputuri S, McCracken CE, Tangpricha V, Goodman M, Baranowski MLH, Orenstein LAV, Yeung H",
     "journal": "Journal of the American Academy of Dermatology",
     "year": 2026,
+    "doi": "10.1016/j.jaad.2026.02.024",
     "pmid": "41690488",
     "tags": [
       "epidemiology"
@@ -64,6 +68,7 @@ export const publications: Publication[] = [
     "authors": "Smith CA, Cheng A, Yeung H",
     "journal": "Dermatology",
     "year": 2026,
+    "doi": "10.1159/000550995",
     "pmid": "41712478",
     "tags": [
       "epidemiology"
@@ -78,6 +83,7 @@ export const publications: Publication[] = [
     "authors": "Smith CA, Kaabi O, Joshi K, Tangpricha V, Goodman M, Yeung H",
     "journal": "JID",
     "year": 2025,
+    "doi": "10.1016/j.jid.2025.06.697",
     "tags": [
       "epidemiology"
     ],
@@ -91,6 +97,7 @@ export const publications: Publication[] = [
     "authors": "Das R, Smith CA, Yeung, H",
     "journal": "JID",
     "year": 2025,
+    "doi": "10.1016/j.jid.2025.06.699",
     "tags": [
       "epidemiology"
     ],
@@ -104,6 +111,7 @@ export const publications: Publication[] = [
     "authors": "Pulminskas A, Smith CA, Joshi K, Rogers J, Deitelzweig C, Gosnell E, Kitchens E, Abu-Ghosh F, Machado K, Yeung H",
     "journal": "JID",
     "year": 2025,
+    "doi": "10.1016/S0022-202X(25)01294-1",
     "tags": [
       "epidemiology"
     ],
@@ -117,6 +125,7 @@ export const publications: Publication[] = [
     "authors": "Smith CA, Kaabi O, Joshi K, Chen SC, Tangpricha V, Goodman M, Yeung H",
     "journal": "JID",
     "year": 2025,
+    "doi": "10.1016/j.jid.2025.06.738",
     "tags": [
       "epidemiology"
     ],
@@ -130,6 +139,7 @@ export const publications: Publication[] = [
     "authors": "Smith CA, Kaabi O, Joshi K, Tangpricha V, Goodman M, Yeung H",
     "journal": "JID",
     "year": 2025,
+    "doi": "10.1016/j.jid.2025.02.021",
     "tags": [
       "epidemiology"
     ],
@@ -156,6 +166,7 @@ export const publications: Publication[] = [
     "authors": "Smith CA, Gosnell E, Karatas TB, Deitelzweig C, Collins, EMB, Yeung, H",
     "journal": "Dermatology and Therapy",
     "year": 2025,
+    "doi": "10.1007/s13555-024-01324-8",
     "pmid": "39751745",
     "tags": [
       "epidemiology"
@@ -170,6 +181,7 @@ export const publications: Publication[] = [
     "authors": "Braun H, Smith CA, Demissie MT, Issa AM, Kidane TY, Stoff B, Yeung H",
     "journal": "dermatology",
     "year": 2025,
+    "doi": "10.1016/j.jid.2025.06.1354",
     "tags": [
       "health-equity"
     ],
@@ -183,6 +195,7 @@ export const publications: Publication[] = [
     "authors": "Cheng AH, Smith CA, Yeung H",
     "journal": "JID",
     "year": 2025,
+    "doi": "10.1016/S0022-202X(25)02059-7",
     "tags": [
       "epidemiology"
     ],
@@ -196,6 +209,7 @@ export const publications: Publication[] = [
     "authors": "Smith CA, Das R, Yeung H",
     "journal": "Journal of the American Academy of Dermatology",
     "year": 2025,
+    "doi": "10.1016/j.jaad.2025.06.068",
     "pmid": "40615093",
     "tags": [
       "epidemiology"
@@ -210,6 +224,7 @@ export const publications: Publication[] = [
     "authors": "Smith CA, Machado KTL, Cheng A, Tribble JT, Scout, Yeung H",
     "journal": "Archives of Dermatological Research",
     "year": 2025,
+    "doi": "10.1007/s00403-024-03772-w",
     "pmid": "39820662",
     "tags": [
       "epidemiology",
@@ -225,6 +240,7 @@ export const publications: Publication[] = [
     "authors": "Smith CA, Hogeling M, Cheng C",
     "journal": "Journal of Drugs in Dermatology",
     "year": 2025,
+    "doi": "10.36849/JDD.8703",
     "pmid": "40465499",
     "tags": [
       "epidemiology"
@@ -239,6 +255,7 @@ export const publications: Publication[] = [
     "authors": "Smith CA, Pithadia D, Wang D, Hogeling M, Cheng CE",
     "journal": "JAAD International",
     "year": 2025,
+    "doi": "10.1016/j.jdin.2024.09.005",
     "pmid": "39618913",
     "tags": [
       "epidemiology"
@@ -253,6 +270,7 @@ export const publications: Publication[] = [
     "authors": "Smith CA, Wang D, Pithadia D, Hogeling M, Cheng CE",
     "journal": "Journal of the American Academy of Dermatology",
     "year": 2024,
+    "doi": "10.1016/j.jaad.2024.07.689",
     "tags": [
       "epidemiology",
       "informatics",
@@ -268,6 +286,7 @@ export const publications: Publication[] = [
     "authors": "Holt AC, Berkowitz M, McAndrew N, Smith C, Baker J, Kapoor N",
     "journal": "Cancer Research",
     "year": 2024,
+    "doi": "10.1158/1538-7445.SABCS23-PO2-22-10",
     "tags": [],
     "isFirstAuthor": false,
     "kind": "published-abstract",
@@ -279,6 +298,7 @@ export const publications: Publication[] = [
     "authors": "Smith CA, Pithadia D, Wang D, Hogeling M, Cheng CE",
     "journal": "JID",
     "year": 2024,
+    "doi": "10.1016/j.jid.2024.06.327",
     "tags": [
       "epidemiology"
     ],
@@ -292,6 +312,7 @@ export const publications: Publication[] = [
     "authors": "Smith CA, Pulminskas A, Rogers J, Fischer A, Deitelzweig C, Ohamadike C, Lawley L, Yeung H",
     "journal": "Current Pediatrics Reports",
     "year": 2024,
+    "doi": "10.1007/s40124-025-00344-y",
     "pmid": "40547400",
     "tags": [
       "epidemiology"
@@ -318,6 +339,7 @@ export const publications: Publication[] = [
     "authors": "Smith CA, Kuklinski LF",
     "journal": "Archives of Dermatological Research",
     "year": 2024,
+    "doi": "10.1007/s00403-024-03373-7",
     "pmid": "39276233",
     "tags": [
       "epidemiology"
@@ -332,6 +354,7 @@ export const publications: Publication[] = [
     "authors": "Holt AC, Smith CA, Berkowitz MJ, Baker JL, McAndrew NP, Kapoor NS",
     "journal": "Discover Oncology",
     "year": 2024,
+    "doi": "10.1007/s12672-024-01349-7",
     "pmid": "39302495",
     "tags": [],
     "isFirstAuthor": false,
@@ -344,6 +367,7 @@ export const publications: Publication[] = [
     "authors": "Chen T-G, Zhang H, Mykhailiuk PK, Merchant RR, Smith CA, Qin T, Baran PS",
     "journal": "Angew. Chem. Int Ed Engl.",
     "year": 2019,
+    "doi": "10.1002/anie.201814524",
     "pmid": "30623547",
     "tags": [
       "chemistry"
@@ -358,6 +382,7 @@ export const publications: Publication[] = [
     "authors": "Smith CA, Motika S, Wojtas L, Shi X",
     "journal": "Chem. Comm.",
     "year": 2016,
+    "doi": "10.1039/c6cc09794d",
     "pmid": "28074975",
     "tags": [
       "chemistry"
@@ -372,6 +397,7 @@ export const publications: Publication[] = [
     "authors": "Hosseyni S, Smith CA, Wojtas L, Shi X",
     "journal": "Org. Lett.",
     "year": 2016,
+    "doi": "10.1021/acs.orglett.6b03228",
     "pmid": "27978688",
     "tags": [
       "chemistry"
@@ -386,6 +412,7 @@ export const publications: Publication[] = [
     "authors": "Martin MD, Calcul L, Smith C, Jinwal UK, Fontaine SN, Darling A, Seeley K, Wojtas L, Narayan M, Gestwicki JE, Smith GR, Reitz AB, Baker BJ, Dickey CA",
     "journal": "ACS Chem. Biol.",
     "year": 2015,
+    "doi": "10.1021/cb501013w",
     "pmid": "25588114",
     "tags": [
       "chemistry"
