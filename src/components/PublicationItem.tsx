@@ -1,20 +1,8 @@
 import type { Publication } from '@/types'
+import { FormattedAuthors } from './FormattedAuthors'
 
 interface PublicationItemProps {
   publication: Publication
-}
-
-function highlightAuthor(authors: string, name: string = 'Smith CA'): React.ReactNode {
-  const parts = authors.split(name)
-  if (parts.length === 1) return authors
-
-  return (
-    <>
-      {parts[0]}
-      <strong className="font-semibold">{name}</strong>
-      {parts.slice(1).join(name)}
-    </>
-  )
 }
 
 function getPublicationUrl(publication: Publication): string | null {
@@ -44,8 +32,8 @@ export function PublicationItem({ publication }: PublicationItemProps) {
           title
         )}
       </h4>
-      <p className="mt-1 text-sm text-text-secondary">
-        {highlightAuthor(authors)}
+      <p className="mt-1 max-w-none text-sm text-text-secondary">
+        <FormattedAuthors authors={authors} />
       </p>
       <p className="mt-0.5 text-sm text-text-muted">
         {journal}, {year}

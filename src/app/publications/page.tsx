@@ -3,27 +3,18 @@
 import { useState, useMemo } from 'react'
 import { Container } from '@/components/Container'
 import { PageHeader } from '@/components/PageHeader'
+import { FormattedAuthors } from '@/components/FormattedAuthors'
 import { publications } from '@/data/publications'
 import type { Publication } from '@/types'
 
 type TypeFilter = 'all' | 'article' | 'published-abstract'
 type YearFilter = 'all' | '2026' | '2025' | '2024' | 'earlier'
 
-function getPubMedUrl(pmid: string): string {
-  return `https://pubmed.ncbi.nlm.nih.gov/${pmid}/`
-}
-
-function highlightAuthor(authors: string, name: string = 'Smith CA'): React.ReactNode {
-  const parts = authors.split(name)
-  if (parts.length === 1) return authors
-
-  return (
-    <>
-      {parts[0]}
-      <strong className="font-semibold">{name}</strong>
-      {parts.slice(1).join(name)}
-    </>
-  )
+function getPublicationUrl(pub: Publication): string | null {
+  if (pub.url) return pub.url
+  if (pub.pmid) return `https://pubmed.ncbi.nlm.nih.gov/${pub.pmid}/`
+  if (pub.doi) return `https://doi.org/${pub.doi}`
+  return null
 }
 
 function FilterPill({
@@ -57,16 +48,17 @@ function PublicationListItem({
 }: {
   publication: Publication
 }) {
-  const { title, authors, journal, year, pmid, tags } = publication
+  const { title, authors, journal, year, tags } = publication
+  const publicationUrl = getPublicationUrl(publication)
 
   return (
     <article
       className="py-4 border-b border-border-subtle last:border-b-0 transition-opacity duration-150"
     >
       <h3 className="font-medium text-text-primary leading-snug">
-        {pmid ? (
+        {publicationUrl ? (
           <a
-            href={getPubMedUrl(pmid)}
+            href={publicationUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-accent transition-colors duration-150"
@@ -77,8 +69,8 @@ function PublicationListItem({
           title
         )}
       </h3>
-      <p className="mt-1 text-sm text-text-secondary">
-        {highlightAuthor(authors)}
+      <p className="mt-1 max-w-none text-sm text-text-secondary">
+        <FormattedAuthors authors={authors} />
       </p>
       <p className="mt-0.5 text-sm text-text-muted">
         <em>{journal}</em>, {year}
