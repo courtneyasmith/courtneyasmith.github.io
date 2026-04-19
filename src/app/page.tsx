@@ -48,7 +48,7 @@ export default function Home() {
             gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
             gap: '1.25rem'
           }}>
-            {researchThemes.map((theme, index) => (
+            {researchThemes.slice(0, 3).map((theme, index) => (
               <ResearchThemeCard key={theme.id} theme={theme} index={index} />
             ))}
           </div>

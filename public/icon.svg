@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Three connected nodes forming a minimal data network -->
+  <circle cx="8" cy="20" r="4" fill="#2563eb"/>
+  <circle cx="24" cy="20" r="4" fill="#2563eb"/>
+  <circle cx="16" cy="8" r="4" fill="#2563eb"/>
+  <!-- Connection lines -->
+  <line x1="10.5" y1="17.5" x2="13.5" y2="10.5" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <line x1="21.5" y1="17.5" x2="18.5" y2="10.5" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <line x1="12" y1="20" x2="20" y2="20" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+</svg>
