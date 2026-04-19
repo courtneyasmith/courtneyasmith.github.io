@@ -5,7 +5,7 @@ import { siteConfig } from '@/data/site-config'
 import { SocialLinks } from './SocialLinks'
 import { ScrollReveal } from './animation/ScrollReveal'
 
-const heroBio = `My research focuses on dermatologic epidemiology and health equity, with an emphasis on transgender dermatology, acne, and hidradenitis suppurativa. I build computational tools that support research to address unmet care needs in dermatology. Alongside collaborators who share these goals, this work has contributed to an evidence base for inclusive dermatologic care, with publications in JAMA Dermatology, JAAD, and other high-impact journals.`
+const heroBio = `My research focuses on dermatologic epidemiology and health equity, with an emphasis on acne and hidradenitis suppurativa. I build computational tools that support research to address unmet care needs in dermatology. Alongside collaborators who share these goals, this work has contributed to an evidence base for inclusive dermatologic care, with publications in JAMA Dermatology, JAAD, and other high-impact journals.`
 
 export function Hero() {
   return (
