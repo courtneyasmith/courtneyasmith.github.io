@@ -21,15 +21,23 @@ function getPubMedUrl(pmid: string): string {
   return `https://pubmed.ncbi.nlm.nih.gov/${pmid}/`
 }
 
+function getPublicationUrl(publication: Publication): string | null {
+  if (publication.url) return publication.url
+  if (publication.pmid) return `https://pubmed.ncbi.nlm.nih.gov/${publication.pmid}/`
+  if (publication.doi) return `https://doi.org/${publication.doi}`
+  return null
+}
+
 export function PublicationItem({ publication }: PublicationItemProps) {
-  const { title, authors, journal, year, pmid } = publication
+  const { title, authors, journal, year } = publication
+  const publicationUrl = getPublicationUrl(publication)
 
   return (
     <article className="py-4 border-b border-border-subtle last:border-b-0">
       <h4 className="font-medium text-text-primary leading-snug">
-        {pmid ? (
+        {publicationUrl ? (
           <a
-            href={getPubMedUrl(pmid)}
+            href={publicationUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-accent transition-colors duration-150"
