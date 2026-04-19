@@ -5,7 +5,7 @@ export const researchThemes: ResearchDirection[] = [
     id: 'transgender-dermatology',
     title: 'Dermatologic Care for Transgender Patients',
     description:
-      'Multi-center cohort studies characterizing acne, hidradenitis suppurativa, and hair removal outcomes in transgender individuals on gender-affirming hormone therapy.',
+      'Multi-center cohort studies characterizing acne, hidradenitis suppurativa, and hair removal outcomes in transgender individuals prescribed gender-affirming hormone therapy.',
     focus: 'Epidemiology and clinical management in an underrepresented population',
     keyWork: ['Acne incidence and severity (JAMA Dermatology)', 'HS incidence (JAAD)'],
     relatedPublicationIds: [
@@ -16,13 +16,14 @@ export const researchThemes: ResearchDirection[] = [
     ],
   },
   {
-    id: 'hidradenitis-suppurativa',
-    title: 'Hidradenitis Suppurativa Epidemiology',
+    id: 'epidemiology',
+    title: 'Epidemiology in Dermatology',
     description:
-      'Population-level studies of HS prevalence, incidence, and risk factors using large healthcare databases across Kaiser Permanente and VA systems.',
+      'Population-level studies using large healthcare databases to characterize disease burden, risk factors, and health behaviors.',
     focus: 'Multi-site cohort studies with validated case definitions',
-    keyWork: ['HS incidence in transgender individuals (JAAD)', 'HS prevalence in youth (JID)'],
+    keyWork: ['Smoking in skin cancer survivors (JAAD)', 'HS prevalence in youth (JID)'],
     relatedPublicationIds: [
+      'smoking-cessation-and-persistence-in-skin-cancer-survivors-a-cross-sectional-stu',
       'incidence-of-hidradenitis-suppurativa-in-transgender-and-cisgender-individuals-a',
       'hidradenitis-suppurativa-prevalence-in-transgender-and-cisgender-youth-a-multi-r',
     ],
