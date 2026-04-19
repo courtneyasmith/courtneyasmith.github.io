@@ -76,24 +76,17 @@ export default function AboutPage() {
       <ScrollReveal delay={0.1}>
         <section className="pb-12 space-y-6">
           <p className="text-text-primary leading-relaxed">
-            I am a future physician-scientist. My research asks how computational methods and large-scale
-            data can improve care for patients underrepresented in dermatologic research. This has
-            led to multi-center cohort studies on acne and hidradenitis suppurativa in transgender
-            individuals, NLP tools for prescription analysis, and epidemiologic work on skin cancer
-            disparities in sexual and gender minority patients.
+            I study how computational methods and large-scale data can improve care for patients
+            underrepresented in dermatologic research. My work has included multi-center cohort
+            studies on acne and hidradenitis suppurativa in transgender individuals, NLP tools
+            for prescription analysis, and epidemiologic work on skin cancer disparities in
+            sexual and gender minority patients.
           </p>
 
           <p className="text-text-primary leading-relaxed">
-            I trained as a synthetic chemist before medicine, earning an M.S. in Chemistry from the
-            University of South Florida. That scientific foundation—systematic, methods-driven,
-            attentive to detail—shapes my clinical research. Personal experiences navigating
-            healthcare barriers inform my commitment to health equity.
-          </p>
-
-          <p className="text-text-primary leading-relaxed">
-            I join Harvard Combined Dermatology in 2027. My research trajectory: an independent
-            program bridging dermatologic epidemiology, clinical informatics, and care delivery
-            science, with continued focus on populations where data gaps limit clinical guidance.
+            I join Harvard Combined Dermatology in 2027. I am looking forward to growing as a
+            clinician, learning from mentors and co-residents, and continuing to develop research
+            questions alongside collaborators who care about equitable dermatologic care.
           </p>
         </section>
       </ScrollReveal>
