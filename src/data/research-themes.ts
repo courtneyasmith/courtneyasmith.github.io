@@ -3,7 +3,7 @@ import type { ResearchDirection } from '@/types'
 export const researchThemes: ResearchDirection[] = [
   {
     id: 'transgender-dermatology',
-    title: 'Transgender Dermatologic Care',
+    title: 'Dermatologic Care for Transgender Patients',
     description:
       'Multi-center cohort studies characterizing acne, hidradenitis suppurativa, and hair removal outcomes in transgender individuals on gender-affirming hormone therapy.',
     focus: 'Epidemiology and clinical management in an underrepresented population',
@@ -49,7 +49,6 @@ export const researchThemes: ResearchDirection[] = [
     keyWork: ['SGM skin cancer survivorship (Arch Derm Res)', 'Healthcare barriers (OUT Survey)'],
     relatedPublicationIds: [
       'skin-cancer-treatment-environment-and-survivorship-resources-among-sexual-and-ge',
-      'healthcare-barriers-among-sexual-and-gender-minority-skin-cancer-survivors-a-cro',
     ],
   },
 ]
