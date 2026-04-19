@@ -52,6 +52,7 @@ src/scripts/
 .impeccable.md
 CLAUDE.md
 **/CLAUDE.md
+.claude/
 
 # Editor config
 .vscode/
@@ -62,3 +63,4 @@ agent_queue/
 # All markdown files (keep docs local only)
 *.md
 **/*.md
+agent_queue
