@@ -5,7 +5,7 @@ export const researchThemes: ResearchDirection[] = [
     id: 'transgender-dermatology',
     title: 'Dermatologic Care for Transgender Patients',
     description:
-      'Multi-center cohort studies characterizing acne, hidradenitis suppurativa, and hair removal outcomes in transgender individuals prescribed gender-affirming hormone therapy.',
+      'National studies characterizing acne, hidradenitis suppurativa, and hair removal outcomes in transgender individuals prescribed gender-affirming hormone therapy.',
     focus: 'Epidemiology and clinical management in an underrepresented population',
     keyWork: ['Acne incidence and severity (JAMA Dermatology)', 'HS incidence (JAAD)'],
     relatedPublicationIds: [
