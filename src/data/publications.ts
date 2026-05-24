@@ -148,19 +148,6 @@ export const publications: Publication[] = [
     "isPeerReviewed": true
   },
   {
-    "id": "association-between-serum-iron-status-and-skin-cancer-odds-a-cross-sectional-stu",
-    "title": "Association between serum iron status and skin cancer odds: A cross-sectional study of adults in the United States",
-    "authors": "Smith CA, Ganz T, Nemeth E, Kuklinski L",
-    "journal": "Clinical, Cosmetic and Investigational Dermatology",
-    "year": 2025,
-    "tags": [
-      "epidemiology"
-    ],
-    "isFirstAuthor": true,
-    "kind": "article",
-    "isPeerReviewed": true
-  },
-  {
     "id": "hormonal-therapies-for-acne-a-comprehensive-update-for-dermatologists",
     "title": "Hormonal Therapies for Acne: A Comprehensive Update for Dermatologists",
     "authors": "Smith CA, Gosnell E, Karatas TB, Deitelzweig C, Collins, EMB, Yeung, H",
