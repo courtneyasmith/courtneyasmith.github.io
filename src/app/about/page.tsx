@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const education = [
-  { years: '2027–2031', institution: 'Harvard Combined Dermatology Residency' },
+  { years: '2027–2030', institution: 'Harvard Combined Dermatology Residency' },
   { years: '2026–2027', institution: 'Mission Community Hospital, Transitional Year' },
   { years: '2022–2026', institution: 'UCLA David Geffen School of Medicine, MD' },
   { years: '2014–2017', institution: 'University of South Florida, MS Chemistry' },
