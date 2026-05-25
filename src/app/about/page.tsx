@@ -17,8 +17,8 @@ const education = [
 ]
 
 const technicalSkills = {
-  Languages: ['Python', 'R', 'SQL', 'TypeScript'],
-  Tools: ['REDCap', 'Git', 'NLP pipelines', 'Jupyter'],
+  Languages: ['Python', 'R', 'SQL', 'JavaScript'],
+  Tools: ['REDCap', 'Git', 'NLP pipelines', 'Jupyter Notebook'],
   Databases: ['Kaiser Permanente', 'VA CDW', 'NHANES'],
 }
 
