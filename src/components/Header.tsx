@@ -276,8 +276,8 @@ export function Header() {
             ref={mobileMenuRef}
             id="mobile-menu"
             aria-label="Mobile navigation"
-            className="md:hidden fixed inset-0 bg-bg-primary z-50"
-            style={{ top: `${headerHeight}px` }}
+            className="md:hidden fixed left-0 right-0 bg-bg-primary z-50"
+            style={{ top: `${headerHeight}px`, height: `calc(100dvh - ${headerHeight}px)` }}
           >
             <ul className="flex flex-col py-4">
               {navItems.map((item) => (
