@@ -1,7 +1,7 @@
 import type { SiteConfig } from '@/types'
 
 export const siteConfig: SiteConfig = {
-  name: 'Courtney A. Smith, MD',
+  name: 'Courtney A. Smith, MS, MD',
   title: 'Physician-Scientist',
   tagline: 'I am a physician-scientist building computational tools to understand and reduce disparities in dermatologic care access, burden, and outcomes.',
   email: 'casmit16@g.ucla.edu',

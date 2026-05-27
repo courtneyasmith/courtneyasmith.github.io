@@ -123,7 +123,7 @@ export default function PublicationsPage() {
   return (
     <>
       {/* Add metadata via document title since this is a client component */}
-      <title>Publications | Courtney A. Smith, MD</title>
+      <title>Publications | Courtney A. Smith, MS, MD</title>
 
       <Container size="content">
         <PageHeader
