@@ -6,7 +6,7 @@ import { publications } from '@/data/publications'
 
 export const metadata: Metadata = {
   title: 'CV',
-  description: 'Curriculum vitae of Courtney A. Smith, MS.',
+  description: 'Curriculum vitae of Courtney A. Smith, MD.',
 }
 
 const firstAuthorCount = publications.filter(

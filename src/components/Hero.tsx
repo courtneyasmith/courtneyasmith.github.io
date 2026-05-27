@@ -34,7 +34,7 @@ export function Hero() {
                 {siteConfig.name}
               </h1>
               <p style={{ marginTop: '0.5rem', fontSize: '1.125rem', color: 'var(--color-text-secondary)' }}>
-                Future Physician-Scientist
+                Physician-Scientist
               </p>
               <p style={{ marginTop: '1rem', lineHeight: 1.7, maxWidth: '600px' }}>
                 {heroBio}
