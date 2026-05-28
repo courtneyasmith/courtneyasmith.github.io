@@ -5,7 +5,7 @@ import { ScrollReveal } from '@/components/animation/ScrollReveal'
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'Background, education, and research trajectory of Courtney A. Smith, MS, MD.',
+  description: 'Background, education, and research trajectory of Courtney A. Smith, MD, MS.',
 }
 
 const education = [
