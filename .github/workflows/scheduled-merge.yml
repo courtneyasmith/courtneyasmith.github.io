@@ -1,0 +1,31 @@
+name: Scheduled PR Merge - Graduation
+
+on:
+  schedule:
+    - cron: '0 0 29 5 *'
+      timezone: "America/Los_Angeles"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Merge graduation PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Find the open PR from graduation-update branch
+          PR_NUMBER=$(gh pr list --head graduation-update --state open --json number --jq '.[0].number')
+          if [ -n "$PR_NUMBER" ]; then
+            echo "Merging PR #$PR_NUMBER"
+            gh pr merge $PR_NUMBER --merge --delete-branch
+          else
+            echo "No open PR found from graduation-update branch"
+            exit 1
+          fi
