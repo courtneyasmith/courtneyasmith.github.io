@@ -3,6 +3,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2026-06-07',
+  modules: ['@nuxt/eslint'],
   ssr: true, // SSG: `nuxi generate` pre-renders all linked routes to static HTML
   app: {
     baseURL: process.env.NUXT_APP_BASE_URL || '/', // user-pages repo deploys at root
