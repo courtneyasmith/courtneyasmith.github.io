@@ -1,3 +1,5 @@
+import tailwindcss from '@tailwindcss/vite'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2026-06-07',
@@ -7,6 +9,7 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: { lang: 'en' },
       link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' },
         {
           rel: 'preload',
           as: 'font',
@@ -21,15 +24,14 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['data'],
   },
-  postcss: {
-    plugins: {
-      '@tailwindcss/postcss': {},
-    },
+  vite: {
+    plugins: [tailwindcss()],
   },
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/'],
+      // /code and /design-system are not linked from nav, so list them explicitly
+      routes: ['/', '/code', '/design-system'],
     },
   },
   devtools: { enabled: true },

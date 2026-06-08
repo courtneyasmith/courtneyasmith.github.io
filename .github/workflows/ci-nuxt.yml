@@ -1,0 +1,37 @@
+name: CI (Nuxt migration)
+
+on:
+  push:
+    branches: [migrate/nuxt4]
+  pull_request:
+    branches: [migrate/nuxt4]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run generate
+
+      # Non-blocking on this branch: the only high-severity advisories are in
+      # `next`, which is still installed here but is removed at cutover. The
+      # shipped Nuxt artifact does not contain it. Enforced (blocking) audit
+      # returns via ci.yml once Next is dropped.
+      - run: npm audit --audit-level=high
+        continue-on-error: true
+
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: nuxt-static-site
+          path: .output/public
