@@ -21,7 +21,7 @@
   "devDependencies": {
     "@nuxt/eslint": "^1.15.2",
     "@tailwindcss/vite": "^4.3.0",
-    "@types/node": "^20",
+    "@types/node": "^25",
     "eslint": "^9",
     "tailwindcss": "^4",
     "typescript": "^5",
