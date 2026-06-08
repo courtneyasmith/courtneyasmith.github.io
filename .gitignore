@@ -10,10 +10,18 @@
 
 # testing
 /coverage
+.playwright-mcp/
 
 # next.js
 /.next/
 /out/
+
+# nuxt
+.nuxt
+.output
+.data
+.nitro
+/dist
 
 # production
 /build
