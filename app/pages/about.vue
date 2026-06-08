@@ -72,7 +72,7 @@ const otherService = computed(() => communityService.filter((s) => !s.featured))
 
     <ScrollReveal :delay="0.2">
       <section class="py-10 px-6 rounded-lg bg-bg-secondary border border-border-subtle">
-        <h2 class="font-semibold text-text-primary mb-6" :style="{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)' }">
+        <h2 class="font-semibold text-text-primary mb-6 text-[clamp(1.25rem,3vw,1.5rem)]">
           Education &amp; Training
         </h2>
 
@@ -80,8 +80,7 @@ const otherService = computed(() => communityService.filter((s) => !s.featured))
           <div
             v-for="item in education"
             :key="item.years"
-            class="grid gap-3"
-            :style="{ gridTemplateColumns: '100px 1fr' }"
+            class="grid gap-3 grid-cols-[100px_1fr]"
           >
             <span class="text-sm font-mono text-text-muted">{{ item.years }}</span>
             <span class="text-text-primary">{{ item.institution }}</span>
@@ -92,7 +91,7 @@ const otherService = computed(() => communityService.filter((s) => !s.featured))
 
     <ScrollReveal :delay="0.3">
       <section class="py-10 mt-6 px-6 rounded-lg bg-bg-secondary border border-border-subtle">
-        <h2 class="font-semibold text-text-primary mb-6" :style="{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)' }">
+        <h2 class="font-semibold text-text-primary mb-6 text-[clamp(1.25rem,3vw,1.5rem)]">
           Technical Skills
         </h2>
 
@@ -113,7 +112,7 @@ const otherService = computed(() => communityService.filter((s) => !s.featured))
 
     <ScrollReveal :delay="0.4">
       <section class="py-10 mt-6 mb-12 px-6 rounded-lg bg-bg-secondary border border-border-subtle">
-        <h2 class="font-semibold text-text-primary mb-6" :style="{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)' }">
+        <h2 class="font-semibold text-text-primary mb-6 text-[clamp(1.25rem,3vw,1.5rem)]">
           Community &amp; Service
         </h2>
 

@@ -3,33 +3,30 @@ const heroBio = `My research focuses on dermatologic epidemiology and health equ
 </script>
 
 <template>
-  <section class="bg-bg-hero" :style="{ padding: '4rem 0' }">
-    <div :style="{ maxWidth: '900px', margin: '0 auto', padding: '0 1.5rem', width: '100%', boxSizing: 'border-box' }">
+  <section class="bg-bg-hero py-16">
+    <div class="mx-auto w-full max-w-[900px] px-6">
       <ScrollReveal>
-        <div
-          class="md:flex-row md:items-start md:text-left md:gap-10"
-          :style="{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '1.5rem' }"
-        >
-          <div :style="{ flexShrink: 0 }">
-            <div :style="{ position: 'relative', width: '140px', height: '140px', borderRadius: '50%', overflow: 'hidden', border: '2px solid #e5e5e5' }">
+        <div class="flex flex-col items-center gap-6 text-center">
+          <div class="shrink-0">
+            <div class="relative h-[140px] w-[140px] overflow-hidden rounded-full border-2 border-border">
               <img
                 src="/images/headshot_2025-09-23.jpg"
                 :alt="siteConfig.name"
                 width="140"
                 height="140"
-                :style="{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }"
+                class="h-full w-full object-cover object-top"
               >
             </div>
           </div>
 
-          <div :style="{ flex: 1, minWidth: 0 }">
-            <h1 :style="{ fontSize: '2.25rem', fontWeight: 700, letterSpacing: '-0.025em', lineHeight: 1.2 }">
+          <div class="min-w-0 flex-1">
+            <h1 class="text-4xl font-bold leading-[1.2] tracking-tight">
               {{ siteConfig.name }}
             </h1>
-            <p :style="{ marginTop: '0.5rem', fontSize: '1.125rem', color: 'var(--color-text-secondary)' }">
+            <p class="mt-2 text-lg text-text-secondary">
               Physician-Scientist
             </p>
-            <p :style="{ marginTop: '1rem', lineHeight: 1.7, maxWidth: '600px' }">
+            <p class="mt-4 max-w-[600px] leading-[1.7]">
               {{ heroBio }}
             </p>
             <SocialLinks class="mt-5" />

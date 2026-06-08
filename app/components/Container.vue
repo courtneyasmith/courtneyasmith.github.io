@@ -9,24 +9,15 @@ const props = withDefaults(defineProps<ContainerProps>(), {
 })
 
 // prose: 672px text-heavy · content: 896px mixed · full: 1024px grid layouts
-const sizeMaxWidths = {
-  prose: '42rem',
-  content: '56rem',
-  full: '64rem',
+const sizeClass = {
+  prose: 'max-w-[42rem]',
+  content: 'max-w-[56rem]',
+  full: 'max-w-[64rem]',
 } as const
 </script>
 
 <template>
-  <div
-    :class="props.class"
-    :style="{
-      maxWidth: sizeMaxWidths[props.size],
-      marginInline: 'auto',
-      paddingInline: 'clamp(1.5rem, 5vw, 3rem)',
-      width: '100%',
-      boxSizing: 'border-box',
-    }"
-  >
+  <div :class="['mx-auto w-full px-[clamp(1.5rem,5vw,3rem)]', sizeClass[props.size], props.class]">
     <slot />
   </div>
 </template>

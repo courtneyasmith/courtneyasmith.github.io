@@ -12,16 +12,13 @@
 /coverage
 .playwright-mcp/
 
-# next.js
-/.next/
-/out/
-
 # nuxt
 .nuxt
 .output
 .data
 .nitro
 /dist
+/out
 
 # production
 /build
@@ -44,12 +41,8 @@ yarn-error.log*
 __pycache__/
 *.pyc
 
-# vercel
-.vercel
-
 # typescript
 *.tsbuildinfo
-next-env.d.ts
 
 # local-only content
 reference/

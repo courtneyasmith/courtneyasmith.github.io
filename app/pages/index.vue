@@ -10,39 +10,21 @@ const featuredPublicationIds = [
 const selectedPublications = featuredPublicationIds
   .map((id) => publications.find((p) => p.id === id))
   .filter((p): p is (typeof publications)[number] => p !== undefined && p.kind !== 'submitted')
-
-const containerStyle = {
-  maxWidth: '1100px',
-  margin: '0 auto',
-  padding: '0 1.5rem',
-  width: '100%',
-  boxSizing: 'border-box' as const,
-}
-
-const sectionStyle = {
-  padding: '4rem 0',
-}
 </script>
 
 <template>
   <div>
     <Hero />
 
-    <section :style="sectionStyle">
-      <div :style="containerStyle">
+    <section class="py-16">
+      <div class="mx-auto w-full max-w-[1100px] px-6">
         <ScrollReveal>
-          <h2 :style="{ fontSize: '1.5rem', fontWeight: 600, marginBottom: '2rem' }">
+          <h2 class="mb-8 text-2xl font-semibold">
             Research
           </h2>
         </ScrollReveal>
 
-        <div
-          :style="{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-            gap: '1.25rem',
-          }"
-        >
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-5">
           <ResearchThemeCard
             v-for="(theme, index) in researchThemes.slice(0, 3)"
             :key="theme.id"
@@ -53,33 +35,25 @@ const sectionStyle = {
       </div>
     </section>
 
-    <section :style="{ ...sectionStyle, backgroundColor: 'var(--color-bg-secondary)' }">
-      <div :style="{ ...containerStyle, maxWidth: '800px' }">
+    <section class="bg-bg-secondary py-16">
+      <div class="mx-auto w-full max-w-[800px] px-6">
         <ScrollReveal>
-          <h2 :style="{ fontSize: '1.5rem', fontWeight: 600, marginBottom: '2rem' }">
+          <h2 class="mb-8 text-2xl font-semibold">
             Selected Publications
           </h2>
         </ScrollReveal>
 
         <ScrollReveal :delay="0.1">
-          <div
-            :style="{
-              backgroundColor: 'var(--color-bg-primary)',
-              borderRadius: '0.5rem',
-              border: '1px solid var(--color-border-subtle)',
-              padding: '1.5rem',
-            }"
-          >
+          <div class="rounded-lg border border-border-subtle bg-bg-primary p-6">
             <PublicationItem v-for="pub in selectedPublications" :key="pub.id" :publication="pub" />
           </div>
         </ScrollReveal>
 
         <ScrollReveal :delay="0.15">
-          <p :style="{ marginTop: '1.5rem' }">
+          <p class="mt-6">
             <NuxtLink
               to="/publications"
-              class="text-accent hover:text-accent-hover"
-              :style="{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }"
+              class="inline-flex items-center gap-1 text-accent hover:text-accent-hover"
             >
               View all publications <span aria-hidden="true">→</span>
             </NuxtLink>
