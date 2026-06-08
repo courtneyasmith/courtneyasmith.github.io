@@ -157,7 +157,7 @@ export const publications: Publication[] = [
       "epidemiology"
     ],
     "isFirstAuthor": true,
-    "kind": "article",
+    "kind": "submitted",
     "isPeerReviewed": true
   },
   {

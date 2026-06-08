@@ -9,7 +9,7 @@ useSeoMeta({
 function getPublicationsByIds(ids: string[]): Publication[] {
   return ids
     .map((id) => publications.find((p) => p.id === id))
-    .filter((p): p is Publication => p !== undefined)
+    .filter((p): p is Publication => p !== undefined && p.kind !== 'submitted')
 }
 
 function getPubMedUrl(pmid: string): string {
