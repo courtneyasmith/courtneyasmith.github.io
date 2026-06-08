@@ -2,17 +2,16 @@ import type { ResearchDirection } from '~/types'
 
 export const researchThemes: ResearchDirection[] = [
   {
-    id: 'transgender-dermatology',
-    title: 'Dermatologic Care for Transgender Patients',
+    id: 'clinical-informatics',
+    title: 'Clinical Decision Support & NLP',
     description:
-      'National studies characterizing acne, hidradenitis suppurativa, and hair removal outcomes in transgender individuals prescribed gender-affirming hormone therapy.',
-    focus: 'Epidemiology and clinical management in an underrepresented population',
-    keyWork: ['Acne incidence and severity (JAMA Dermatology)', 'HS incidence (JAAD)'],
+      'Development of natural language processing pipelines for prescription pattern analysis, telemedicine optimization, and clinical decision support in dermatology.',
+    focus: 'Applied informatics for improvement in care access, delivery, and outcomes',
+    keyWork: ['Isotretinoin telemedicine outcomes (JAAD Int)', 'Prescription adherence analysis'],
     relatedPublicationIds: [
-      'acne-incidence-and-severity-in-transgender-individuals',
-      'incidence-of-hidradenitis-suppurativa-in-transgender-and-cisgender-individuals-a',
-      'permanent-hair-removal-in-gender-diverse-adults-assigned-male-at-birth-a-cross-s',
-      'managing-common-dermatologic-needs-in-transgender-and-gender-diverse-adolescents',
+      'video-synchronous-isotretinoin-management-is-associated-with-lower-risk-of-patie',
+      '52472-deconstructing-trends-in-the-equity-of-teledermatology-use-and-outcomes-am',
+      'adherence-to-oral-antibiotic-duration-guidelines-for-acne-treatment-in-transgend',
     ],
   },
   {
@@ -29,16 +28,17 @@ export const researchThemes: ResearchDirection[] = [
     ],
   },
   {
-    id: 'clinical-informatics',
-    title: 'Clinical Decision Support & NLP',
+    id: 'transgender-dermatology',
+    title: 'Dermatologic Care for Transgender Patients',
     description:
-      'Development of natural language processing pipelines for prescription pattern analysis, telemedicine optimization, and clinical decision support in dermatology.',
-    focus: 'Applied informatics for improvement in care access, delivery, and outcomes',
-    keyWork: ['Isotretinoin telemedicine outcomes (JAAD Int)', 'Prescription adherence analysis'],
+      'National studies characterizing acne, hidradenitis suppurativa, and hair removal outcomes in transgender individuals prescribed gender-affirming hormone therapy.',
+    focus: 'Epidemiology and clinical management in an underrepresented population',
+    keyWork: ['Acne incidence and severity (JAMA Dermatology)', 'HS incidence (JAAD)'],
     relatedPublicationIds: [
-      'video-synchronous-isotretinoin-management-is-associated-with-lower-risk-of-patie',
-      '52472-deconstructing-trends-in-the-equity-of-teledermatology-use-and-outcomes-am',
-      'adherence-to-oral-antibiotic-duration-guidelines-for-acne-treatment-in-transgend',
+      'acne-incidence-and-severity-in-transgender-individuals',
+      'incidence-of-hidradenitis-suppurativa-in-transgender-and-cisgender-individuals-a',
+      'permanent-hair-removal-in-gender-diverse-adults-assigned-male-at-birth-a-cross-s',
+      'managing-common-dermatologic-needs-in-transgender-and-gender-diverse-adolescents',
     ],
   },
   {
