@@ -69,8 +69,7 @@ onBeforeUnmount(() => {
   <header :class="headerClasses">
     <nav
       aria-label="Main navigation"
-      class="flex items-center justify-between"
-      :style="{ maxWidth: '1100px', margin: '0 auto', padding: '0 1.5rem', width: '100%', boxSizing: 'border-box' }"
+      class="flex items-center justify-between mx-auto w-full max-w-[1100px] px-6"
     >
       <NuxtLink to="/" class="text-xl font-semibold text-text-primary hover:text-accent transition-colors">
         {{ siteConfig.name }}

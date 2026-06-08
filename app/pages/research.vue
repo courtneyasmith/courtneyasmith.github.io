@@ -38,11 +38,11 @@ const themeBlocks = researchThemes.map((theme, index) => ({
           :id="theme.id"
           class="scroll-mt-24 p-6 rounded-lg bg-bg-secondary border border-border-subtle"
         >
-          <h2 class="font-semibold text-text-primary" :style="{ fontSize: '1.25rem' }">
+          <h2 class="font-semibold text-text-primary text-xl">
             {{ theme.title }}
           </h2>
 
-          <p class="mt-3 text-text-primary leading-relaxed" :style="{ maxWidth: '65ch' }">
+          <p class="mt-3 text-text-primary leading-relaxed max-w-prose">
             {{ theme.description }}
           </p>
 

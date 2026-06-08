@@ -11,16 +11,12 @@ const props = withDefaults(defineProps<PageHeaderProps>(), {
 
 <template>
   <header :class="['pt-12 pb-8', props.centered ? 'text-center' : '']">
-    <h1
-      class="font-semibold text-text-primary"
-      :style="{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)' }"
-    >
+    <h1 class="font-semibold text-text-primary text-h1">
       {{ props.title }}
     </h1>
     <p
       v-if="props.intro"
-      :class="['mt-4 text-text-secondary leading-relaxed', props.centered ? 'mx-auto' : '']"
-      :style="{ maxWidth: '65ch' }"
+      :class="['mt-4 text-text-secondary leading-relaxed max-w-prose', props.centered ? 'mx-auto' : '']"
     >
       {{ props.intro }}
     </p>
