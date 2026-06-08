@@ -9,7 +9,7 @@ const featuredPublicationIds = [
 
 const selectedPublications = featuredPublicationIds
   .map((id) => publications.find((p) => p.id === id))
-  .filter((p): p is (typeof publications)[number] => p !== undefined)
+  .filter((p): p is (typeof publications)[number] => p !== undefined && p.kind !== 'submitted')
 
 const containerStyle = {
   maxWidth: '1100px',
