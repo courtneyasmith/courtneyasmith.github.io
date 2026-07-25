@@ -3,6 +3,17 @@ import type { Publication } from '~/types'
 export type TypeFilter = 'all' | 'article' | 'published-abstract'
 export type YearFilter = 'all' | '2026' | '2025' | '2024' | 'earlier'
 
+/**
+ * Filters only — it deliberately does not sort.
+ *
+ * app/data/publications.ts is generated already ordered most-recent-first, by
+ * publication date with CV order breaking ties (see sort_publications in
+ * src/scripts/export_ts.py). Array.prototype.filter preserves order, so that
+ * ordering carries through untouched. Re-sorting here would mean duplicating the
+ * date-padding rules in a second language and keeping the two in step forever,
+ * and it would mean shipping dates the site never shows. Presentations already
+ * work this way.
+ */
 export function filterPublications(
   pubs: Publication[],
   typeFilter: TypeFilter,
@@ -21,5 +32,4 @@ export function filterPublications(
       if (firstAuthorOnly && !pub.isFirstAuthor) return false
       return true
     })
-    .sort((a, b) => b.year - a.year)
 }
