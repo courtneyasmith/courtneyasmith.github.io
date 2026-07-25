@@ -29,6 +29,18 @@ export const presentations: Presentation[] = [
     "isFirstAuthor": true
   },
   {
+    "id": "pseudofolliculitis-barbae-diagnosis-and-management-in-us-veterans-fiscal-years-2",
+    "title": "Pseudofolliculitis barbae diagnosis and management in U.S. Veterans, Fiscal Years 2016-2022",
+    "authors": "Smith CA, Gunasti J, Murdock A, Collins O, Yeung H",
+    "venue": "Annual Meeting of the American Academy of Dermatology",
+    "location": "Denver, CO",
+    "date": "March 27-31, 2026",
+    "year": 2026,
+    "type": "poster",
+    "status": "ePoster accepted",
+    "isFirstAuthor": true
+  },
+  {
     "id": "refractory-nasal-pemphigus-vegetans-treated-with-dupilumab-in-a-patient-with-mul",
     "title": "Refractory nasal pemphigus vegetans treated with dupilumab in a patient with multiple contraindications to first-line therapies",
     "authors": "Smith CA, Wongvibulsin S, Lin AJ, Shen A, Rodriguez EDD, Holland VR",
@@ -38,18 +50,6 @@ export const presentations: Presentation[] = [
     "year": 2026,
     "type": "oral",
     "status": "Oral presentation and ePoster accepted",
-    "isFirstAuthor": true
-  },
-  {
-    "id": "pseudofolliculitis-barbae-diagnosis-and-management-in-u-s-veterans-fiscal-years-",
-    "title": "Pseudofolliculitis barbae diagnosis and management in U",
-    "authors": "Smith CA, Gunasti J, Murdock A, Collins O, Yeung H",
-    "venue": "S. Veterans, Fiscal Years 2016-2022. Annual Meeting of the American Academy of Dermatology",
-    "location": "Denver, CO",
-    "date": "March 27-31, 2026",
-    "year": 2026,
-    "type": "poster",
-    "status": "ePoster accepted",
     "isFirstAuthor": true
   },
   {

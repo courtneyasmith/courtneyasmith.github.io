@@ -40,6 +40,9 @@ yarn-error.log*
 .venv/
 __pycache__/
 *.pyc
+*.db
+# atomic writes land a .tmp beside the target first; a hard crash can leave one
+*.tmp
 
 # typescript
 *.tsbuildinfo

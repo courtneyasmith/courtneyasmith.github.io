@@ -157,7 +157,7 @@ export const publications: Publication[] = [
       "epidemiology"
     ],
     "isFirstAuthor": true,
-    "kind": "submitted",
+    "kind": "article",
     "isPeerReviewed": true
   },
   {
@@ -176,10 +176,10 @@ export const publications: Publication[] = [
     "isPeerReviewed": true
   },
   {
-    "id": "lb1081-curriculum-on-research-self-efficacy-motivations-and-barriers-for",
-    "title": "LB1081 Curriculum on research self-efficacy, motivations, and barriers for",
+    "id": "lb1081-curriculum-on-research-self-efficacy-motivations-and-barriers-for-dermato",
+    "title": "LB1081 Curriculum on research self-efficacy, motivations, and barriers for dermatology residents in Ethiopia",
     "authors": "Braun H, Smith CA, Demissie MT, Issa AM, Kidane TY, Stoff B, Yeung H",
-    "journal": "dermatology",
+    "journal": "JID",
     "year": 2025,
     "doi": "10.1016/j.jid.2025.06.1354",
     "tags": [
