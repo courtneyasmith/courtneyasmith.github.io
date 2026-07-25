@@ -5,21 +5,6 @@ import type { Publication, PublicationTag } from '~/types'
 
 export const publications: Publication[] = [
   {
-    "id": "acne-incidence-and-severity-in-transgender-individuals",
-    "title": "Acne Incidence and Severity in Transgender Individuals",
-    "authors": "Smith CA, Kaabi O, Manatunga AK, Lash TL, Silverberg MJ, Getahun D, Vupputuri S, McCracken CE, Chen SC, Tangpricha V, Goodman M, Yeung H",
-    "journal": "JAMA Dermatology",
-    "year": 2026,
-    "doi": "10.1001/jamadermatol.2025.5597",
-    "pmid": "41563779",
-    "tags": [
-      "epidemiology"
-    ],
-    "isFirstAuthor": true,
-    "kind": "article",
-    "isPeerReviewed": true
-  },
-  {
     "id": "adherence-to-oral-antibiotic-duration-guidelines-for-acne-treatment-in-transgend",
     "title": "Adherence to oral antibiotic duration guidelines for acne treatment in transgender adolescents: a retrospective cohort study",
     "authors": "Smith CA, Yeung H, Cheng C, Hogeling M",
@@ -48,21 +33,6 @@ export const publications: Publication[] = [
     "isPeerReviewed": true
   },
   {
-    "id": "incidence-of-hidradenitis-suppurativa-in-transgender-and-cisgender-individuals-a",
-    "title": "Incidence of Hidradenitis Suppurativa in Transgender and Cisgender Individuals: A Multicenter Matched Cohort Study",
-    "authors": "Smith CA, Gunasti J, Kaabi O, Murdock A, Manatunga AK, Lash TL, Silverberg MJ, Getahun D, Vupputuri S, McCracken CE, Tangpricha V, Goodman M, Baranowski MLH, Orenstein LAV, Yeung H",
-    "journal": "Journal of the American Academy of Dermatology",
-    "year": 2026,
-    "doi": "10.1016/j.jaad.2026.02.024",
-    "pmid": "41690488",
-    "tags": [
-      "epidemiology"
-    ],
-    "isFirstAuthor": true,
-    "kind": "article",
-    "isPeerReviewed": true
-  },
-  {
     "id": "smoking-cessation-and-persistence-in-skin-cancer-survivors-a-cross-sectional-stu",
     "title": "Smoking cessation and persistence in skin cancer survivors: a cross-sectional study of National Health and Nutrition Examination Survey, 2009-2018",
     "authors": "Smith CA, Cheng A, Yeung H",
@@ -78,45 +48,48 @@ export const publications: Publication[] = [
     "isPeerReviewed": true
   },
   {
-    "id": "0685-acne-incidence-in-transgender-adolescents-a-multi-center-cohort-study",
-    "title": "0685 Acne incidence in transgender adolescents: A multi-center cohort study",
-    "authors": "Smith CA, Kaabi O, Joshi K, Tangpricha V, Goodman M, Yeung H",
-    "journal": "JID",
-    "year": 2025,
-    "doi": "10.1016/j.jid.2025.06.697",
+    "id": "incidence-of-hidradenitis-suppurativa-in-transgender-and-cisgender-individuals-a",
+    "title": "Incidence of Hidradenitis Suppurativa in Transgender and Cisgender Individuals: A Multicenter Matched Cohort Study",
+    "authors": "Smith CA, Gunasti J, Kaabi O, Murdock A, Manatunga AK, Lash TL, Silverberg MJ, Getahun D, Vupputuri S, McCracken CE, Tangpricha V, Goodman M, Baranowski MLH, Orenstein LAV, Yeung H",
+    "journal": "Journal of the American Academy of Dermatology",
+    "year": 2026,
+    "doi": "10.1016/j.jaad.2026.02.024",
+    "pmid": "41690488",
     "tags": [
       "epidemiology"
     ],
     "isFirstAuthor": true,
-    "kind": "published-abstract",
+    "kind": "article",
     "isPeerReviewed": true
   },
   {
-    "id": "0687-permanent-hair-removal-and-psychosocial-outcomes-in-transgender-and-gender-",
-    "title": "0687 Permanent hair removal and psychosocial outcomes in transgender and gender-diverse adults assigned male at birth: A cross-sectional study",
-    "authors": "Das R, Smith CA, Yeung, H",
-    "journal": "JID",
-    "year": 2025,
-    "doi": "10.1016/j.jid.2025.06.699",
+    "id": "acne-incidence-and-severity-in-transgender-individuals",
+    "title": "Acne Incidence and Severity in Transgender Individuals",
+    "authors": "Smith CA, Kaabi O, Manatunga AK, Lash TL, Silverberg MJ, Getahun D, Vupputuri S, McCracken CE, Chen SC, Tangpricha V, Goodman M, Yeung H",
+    "journal": "JAMA Dermatology",
+    "year": 2026,
+    "doi": "10.1001/jamadermatol.2025.5597",
+    "pmid": "41563779",
     "tags": [
       "epidemiology"
     ],
-    "isFirstAuthor": false,
-    "kind": "published-abstract",
+    "isFirstAuthor": true,
+    "kind": "article",
     "isPeerReviewed": true
   },
   {
-    "id": "0721-remote-participant-acquired-images-for-acne-research-in-transgender-and-gen",
-    "title": "0721 Remote, participant-acquired images for acne research in transgender and gender-diverse individuals: A prospective cohort study",
-    "authors": "Pulminskas A, Smith CA, Joshi K, Rogers J, Deitelzweig C, Gosnell E, Kitchens E, Abu-Ghosh F, Machado K, Yeung H",
-    "journal": "JID",
+    "id": "permanent-hair-removal-in-gender-diverse-adults-assigned-male-at-birth-a-cross-s",
+    "title": "Permanent hair removal in gender diverse adults assigned male at birth: a cross-sectional study",
+    "authors": "Smith CA, Das R, Yeung H",
+    "journal": "Journal of the American Academy of Dermatology",
     "year": 2025,
-    "doi": "10.1016/S0022-202X(25)01294-1",
+    "doi": "10.1016/j.jaad.2025.06.068",
+    "pmid": "40615093",
     "tags": [
       "epidemiology"
     ],
-    "isFirstAuthor": false,
-    "kind": "published-abstract",
+    "isFirstAuthor": true,
+    "kind": "article",
     "isPeerReviewed": true
   },
   {
@@ -134,45 +107,17 @@ export const publications: Publication[] = [
     "isPeerReviewed": true
   },
   {
-    "id": "8-acne-prevalence-and-severity-in-transgender-adolescents-a-multi-center-validat",
-    "title": "8 Acne prevalence and severity in transgender adolescents: A multi-center, validated cohort study",
+    "id": "0685-acne-incidence-in-transgender-adolescents-a-multi-center-cohort-study",
+    "title": "0685 Acne incidence in transgender adolescents: A multi-center cohort study",
     "authors": "Smith CA, Kaabi O, Joshi K, Tangpricha V, Goodman M, Yeung H",
     "journal": "JID",
     "year": 2025,
-    "doi": "10.1016/j.jid.2025.02.021",
+    "doi": "10.1016/j.jid.2025.06.697",
     "tags": [
       "epidemiology"
     ],
     "isFirstAuthor": true,
     "kind": "published-abstract",
-    "isPeerReviewed": true
-  },
-  {
-    "id": "association-between-serum-iron-status-and-skin-cancer-odds-a-cross-sectional-stu",
-    "title": "Association between serum iron status and skin cancer odds: A cross-sectional study of adults in the United States",
-    "authors": "Smith CA, Ganz T, Nemeth E, Kuklinski L",
-    "journal": "Clinical, Cosmetic and Investigational Dermatology",
-    "year": 2025,
-    "tags": [
-      "epidemiology"
-    ],
-    "isFirstAuthor": true,
-    "kind": "article",
-    "isPeerReviewed": true
-  },
-  {
-    "id": "hormonal-therapies-for-acne-a-comprehensive-update-for-dermatologists",
-    "title": "Hormonal Therapies for Acne: A Comprehensive Update for Dermatologists",
-    "authors": "Smith CA, Gosnell E, Karatas TB, Deitelzweig C, Collins, EMB, Yeung, H",
-    "journal": "Dermatology and Therapy",
-    "year": 2025,
-    "doi": "10.1007/s13555-024-01324-8",
-    "pmid": "39751745",
-    "tags": [
-      "epidemiology"
-    ],
-    "isFirstAuthor": true,
-    "kind": "article",
     "isPeerReviewed": true
   },
   {
@@ -204,13 +149,70 @@ export const publications: Publication[] = [
     "isPeerReviewed": true
   },
   {
-    "id": "permanent-hair-removal-in-gender-diverse-adults-assigned-male-at-birth-a-cross-s",
-    "title": "Permanent hair removal in gender diverse adults assigned male at birth: a cross-sectional study",
-    "authors": "Smith CA, Das R, Yeung H",
-    "journal": "Journal of the American Academy of Dermatology",
+    "id": "0721-remote-participant-acquired-images-for-acne-research-in-transgender-and-gen",
+    "title": "0721 Remote, participant-acquired images for acne research in transgender and gender-diverse individuals: A prospective cohort study",
+    "authors": "Pulminskas A, Smith CA, Joshi K, Rogers J, Deitelzweig C, Gosnell E, Kitchens E, Abu-Ghosh F, Machado K, Yeung H",
+    "journal": "JID",
     "year": 2025,
-    "doi": "10.1016/j.jaad.2025.06.068",
-    "pmid": "40615093",
+    "doi": "10.1016/S0022-202X(25)01294-1",
+    "tags": [
+      "epidemiology"
+    ],
+    "isFirstAuthor": false,
+    "kind": "published-abstract",
+    "isPeerReviewed": true
+  },
+  {
+    "id": "0687-permanent-hair-removal-and-psychosocial-outcomes-in-transgender-and-gender-",
+    "title": "0687 Permanent hair removal and psychosocial outcomes in transgender and gender-diverse adults assigned male at birth: A cross-sectional study",
+    "authors": "Das R, Smith CA, Yeung, H",
+    "journal": "JID",
+    "year": 2025,
+    "doi": "10.1016/j.jid.2025.06.699",
+    "tags": [
+      "epidemiology"
+    ],
+    "isFirstAuthor": false,
+    "kind": "published-abstract",
+    "isPeerReviewed": true
+  },
+  {
+    "id": "treatment-of-acne-induced-macular-hyperpigmentation-in-fitzpatrick-skin-types-vv",
+    "title": "Treatment of acne-induced macular hyperpigmentation in Fitzpatrick skin types VVI: a scoping review",
+    "authors": "Smith CA, Hogeling M, Cheng C",
+    "journal": "Journal of Drugs in Dermatology",
+    "year": 2025,
+    "doi": "10.36849/JDD.8703",
+    "pmid": "40465499",
+    "tags": [
+      "epidemiology"
+    ],
+    "isFirstAuthor": true,
+    "kind": "article",
+    "isPeerReviewed": true
+  },
+  {
+    "id": "8-acne-prevalence-and-severity-in-transgender-adolescents-a-multi-center-validat",
+    "title": "8 Acne prevalence and severity in transgender adolescents: A multi-center, validated cohort study",
+    "authors": "Smith CA, Kaabi O, Joshi K, Tangpricha V, Goodman M, Yeung H",
+    "journal": "JID",
+    "year": 2025,
+    "doi": "10.1016/j.jid.2025.02.021",
+    "tags": [
+      "epidemiology"
+    ],
+    "isFirstAuthor": true,
+    "kind": "published-abstract",
+    "isPeerReviewed": true
+  },
+  {
+    "id": "video-synchronous-isotretinoin-management-is-associated-with-lower-risk-of-patie",
+    "title": "Video synchronous isotretinoin management is associated with lower risk of patient attrition compared to in-person follow-up: A single-center cohort study involving propensity-score matched analysis of patients with acne",
+    "authors": "Smith CA, Pithadia D, Wang D, Hogeling M, Cheng CE",
+    "journal": "JAAD International",
+    "year": 2025,
+    "doi": "10.1016/j.jdin.2024.09.005",
+    "pmid": "39618913",
     "tags": [
       "epidemiology"
     ],
@@ -235,13 +237,13 @@ export const publications: Publication[] = [
     "isPeerReviewed": true
   },
   {
-    "id": "treatment-of-acne-induced-macular-hyperpigmentation-in-fitzpatrick-skin-types-vv",
-    "title": "Treatment of acne-induced macular hyperpigmentation in Fitzpatrick skin types VVI: a scoping review",
-    "authors": "Smith CA, Hogeling M, Cheng C",
-    "journal": "Journal of Drugs in Dermatology",
+    "id": "hormonal-therapies-for-acne-a-comprehensive-update-for-dermatologists",
+    "title": "Hormonal Therapies for Acne: A Comprehensive Update for Dermatologists",
+    "authors": "Smith CA, Gosnell E, Karatas TB, Deitelzweig C, Collins, EMB, Yeung, H",
+    "journal": "Dermatology and Therapy",
     "year": 2025,
-    "doi": "10.36849/JDD.8703",
-    "pmid": "40465499",
+    "doi": "10.1007/s13555-024-01324-8",
+    "pmid": "39751745",
     "tags": [
       "epidemiology"
     ],
@@ -250,13 +252,39 @@ export const publications: Publication[] = [
     "isPeerReviewed": true
   },
   {
-    "id": "video-synchronous-isotretinoin-management-is-associated-with-lower-risk-of-patie",
-    "title": "Video synchronous isotretinoin management is associated with lower risk of patient attrition compared to in-person follow-up: A single-center cohort study involving propensity-score matched analysis of patients with acne",
-    "authors": "Smith CA, Pithadia D, Wang D, Hogeling M, Cheng CE",
-    "journal": "JAAD International",
+    "id": "association-between-serum-iron-status-and-skin-cancer-odds-a-cross-sectional-stu",
+    "title": "Association between serum iron status and skin cancer odds: A cross-sectional study of adults in the United States",
+    "authors": "Smith CA, Ganz T, Nemeth E, Kuklinski L",
+    "journal": "Clinical, Cosmetic and Investigational Dermatology",
     "year": 2025,
-    "doi": "10.1016/j.jdin.2024.09.005",
-    "pmid": "39618913",
+    "tags": [
+      "epidemiology"
+    ],
+    "isFirstAuthor": true,
+    "kind": "article",
+    "isPeerReviewed": true
+  },
+  {
+    "id": "surgical-outcomes-following-neoadjuvant-chemotherapy-with-and-without-immunother",
+    "title": "Surgical outcomes following neoadjuvant chemotherapy with and without immunotherapy in patients with triple-negative breast cancer",
+    "authors": "Holt AC, Smith CA, Berkowitz MJ, Baker JL, McAndrew NP, Kapoor NS",
+    "journal": "Discover Oncology",
+    "year": 2024,
+    "doi": "10.1007/s12672-024-01349-7",
+    "pmid": "39302495",
+    "tags": [],
+    "isFirstAuthor": false,
+    "kind": "article",
+    "isPeerReviewed": true
+  },
+  {
+    "id": "skin-cancer-diagnosis-associated-with-asthma-and-hay-fever-a-nationwide-cross-se",
+    "title": "Skin cancer diagnosis associated with asthma and hay fever: a nationwide cross-sectional study",
+    "authors": "Smith CA, Kuklinski LF",
+    "journal": "Archives of Dermatological Research",
+    "year": 2024,
+    "doi": "10.1007/s00403-024-03373-7",
+    "pmid": "39276233",
     "tags": [
       "epidemiology"
     ],
@@ -281,18 +309,6 @@ export const publications: Publication[] = [
     "isPeerReviewed": true
   },
   {
-    "id": "abstract-po2-22-10-surgical-outcomes-after-neoadjuvant-chemotherapy-with-and-wit",
-    "title": "Abstract PO2-22-10: Surgical outcomes after neoadjuvant chemotherapy with and without immunotherapy in patients with triple negative breast cancer",
-    "authors": "Holt AC, Berkowitz M, McAndrew N, Smith C, Baker J, Kapoor N",
-    "journal": "Cancer Research",
-    "year": 2024,
-    "doi": "10.1158/1538-7445.SABCS23-PO2-22-10",
-    "tags": [],
-    "isFirstAuthor": false,
-    "kind": "published-abstract",
-    "isPeerReviewed": true
-  },
-  {
     "id": "isotretinoin-dosing-and-patient-demographics-predict-elevation-of-triglyceride-a",
     "title": "Isotretinoin dosing and patient demographics predict elevation of triglyceride abnormalities during acne treatment",
     "authors": "Smith CA, Pithadia D, Wang D, Hogeling M, Cheng CE",
@@ -303,6 +319,30 @@ export const publications: Publication[] = [
       "epidemiology"
     ],
     "isFirstAuthor": true,
+    "kind": "published-abstract",
+    "isPeerReviewed": true
+  },
+  {
+    "id": "safety-and-margin-positivity-rates-of-surgeon-performed-intraoperative-ultrasoun",
+    "title": "Safety and Margin Positivity Rates of Surgeon-Performed Intraoperative Ultrasound-Guided Wire Localization for Breast Cancer",
+    "authors": "Huy T, Graham DS, Baker JL, Thompson CK, Smith C, Holt AC, Kapoor NS",
+    "journal": "Surgical Oncology Insight",
+    "year": 2024,
+    "doi": "10.1016/j.soi.2024.100057",
+    "tags": [],
+    "isFirstAuthor": false,
+    "kind": "article",
+    "isPeerReviewed": true
+  },
+  {
+    "id": "abstract-po2-22-10-surgical-outcomes-after-neoadjuvant-chemotherapy-with-and-wit",
+    "title": "Abstract PO2-22-10: Surgical outcomes after neoadjuvant chemotherapy with and without immunotherapy in patients with triple negative breast cancer",
+    "authors": "Holt AC, Berkowitz M, McAndrew N, Smith C, Baker J, Kapoor N",
+    "journal": "Cancer Research",
+    "year": 2024,
+    "doi": "10.1158/1538-7445.SABCS23-PO2-22-10",
+    "tags": [],
+    "isFirstAuthor": false,
     "kind": "published-abstract",
     "isPeerReviewed": true
   },
@@ -322,46 +362,6 @@ export const publications: Publication[] = [
     "isPeerReviewed": true
   },
   {
-    "id": "safety-and-margin-positivity-rates-of-surgeon-performed-intraoperative-ultrasoun",
-    "title": "Safety and Margin Positivity Rates of Surgeon-Performed Intraoperative Ultrasound-Guided Wire Localization for Breast Cancer",
-    "authors": "Huy T, Graham DS, Baker JL, Thompson CK, Smith C, Holt AC, Kapoor NS",
-    "journal": "Surgical Oncology Insight",
-    "year": 2024,
-    "doi": "10.1016/j.soi.2024.100057",
-    "tags": [],
-    "isFirstAuthor": false,
-    "kind": "article",
-    "isPeerReviewed": true
-  },
-  {
-    "id": "skin-cancer-diagnosis-associated-with-asthma-and-hay-fever-a-nationwide-cross-se",
-    "title": "Skin cancer diagnosis associated with asthma and hay fever: a nationwide cross-sectional study",
-    "authors": "Smith CA, Kuklinski LF",
-    "journal": "Archives of Dermatological Research",
-    "year": 2024,
-    "doi": "10.1007/s00403-024-03373-7",
-    "pmid": "39276233",
-    "tags": [
-      "epidemiology"
-    ],
-    "isFirstAuthor": true,
-    "kind": "article",
-    "isPeerReviewed": true
-  },
-  {
-    "id": "surgical-outcomes-following-neoadjuvant-chemotherapy-with-and-without-immunother",
-    "title": "Surgical outcomes following neoadjuvant chemotherapy with and without immunotherapy in patients with triple-negative breast cancer",
-    "authors": "Holt AC, Smith CA, Berkowitz MJ, Baker JL, McAndrew NP, Kapoor NS",
-    "journal": "Discover Oncology",
-    "year": 2024,
-    "doi": "10.1007/s12672-024-01349-7",
-    "pmid": "39302495",
-    "tags": [],
-    "isFirstAuthor": false,
-    "kind": "article",
-    "isPeerReviewed": true
-  },
-  {
     "id": "quaternary-centers-by-nickelcatalyzed-cross-coupling-of-tertiary-carboxylic-acid",
     "title": "Quaternary Centers by NickelCatalyzed Cross-Coupling of Tertiary Carboxylic Acids and (Hetero)Aryl Zinc Reagents",
     "authors": "Chen T-G, Zhang H, Mykhailiuk PK, Merchant RR, Smith CA, Qin T, Baran PS",
@@ -369,6 +369,21 @@ export const publications: Publication[] = [
     "year": 2019,
     "doi": "10.1002/anie.201814524",
     "pmid": "30623547",
+    "tags": [
+      "chemistry"
+    ],
+    "isFirstAuthor": false,
+    "kind": "article",
+    "isPeerReviewed": true
+  },
+  {
+    "id": "gold-catalyzed-vinyl-ether-hydroalkynylation-an-alternative-pathway-for-the-gold",
+    "title": "Gold-Catalyzed Vinyl Ether Hydroalkynylation: An Alternative Pathway for the Gold-Catalyzed Intermolecular Reaction of Alkenes and Alkynes",
+    "authors": "Hosseyni S, Smith CA, Wojtas L, Shi X",
+    "journal": "Org. Lett.",
+    "year": 2016,
+    "doi": "10.1021/acs.orglett.6b03228",
+    "pmid": "27978688",
     "tags": [
       "chemistry"
     ],
@@ -388,21 +403,6 @@ export const publications: Publication[] = [
       "chemistry"
     ],
     "isFirstAuthor": true,
-    "kind": "article",
-    "isPeerReviewed": true
-  },
-  {
-    "id": "gold-catalyzed-vinyl-ether-hydroalkynylation-an-alternative-pathway-for-the-gold",
-    "title": "Gold-Catalyzed Vinyl Ether Hydroalkynylation: An Alternative Pathway for the Gold-Catalyzed Intermolecular Reaction of Alkenes and Alkynes",
-    "authors": "Hosseyni S, Smith CA, Wojtas L, Shi X",
-    "journal": "Org. Lett.",
-    "year": 2016,
-    "doi": "10.1021/acs.orglett.6b03228",
-    "pmid": "27978688",
-    "tags": [
-      "chemistry"
-    ],
-    "isFirstAuthor": false,
     "kind": "article",
     "isPeerReviewed": true
   },

@@ -30,6 +30,16 @@ CREATE TABLE IF NOT EXISTS publications (
     is_peer_reviewed BOOLEAN NOT NULL DEFAULT 0,
     doi_source       TEXT,
     metadata_locked  BOOLEAN NOT NULL DEFAULT 0,
+    -- Partial ISO-8601: 'YYYY', 'YYYY-MM', or 'YYYY-MM-DD'. Stored at whatever
+    -- precision the source actually knows rather than padded on the way in, so a
+    -- later, better source can be recognised as an upgrade. Sort key only -- the
+    -- site renders journal + year and never shows a date.
+    published_date   TEXT,
+    -- Position in the CV. Breaks ties that published_date genuinely cannot: six
+    -- 2025 abstracts share one JID issue and therefore one date, and falling back
+    -- to title there reproduces the alphabetical ordering this column exists to
+    -- remove. Makes the CV the editorial control for same-date work.
+    cv_order         INTEGER,
     created_at       TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at       TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
     last_parsed_at   TEXT
