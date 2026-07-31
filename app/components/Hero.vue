@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const heroBio = `My research focuses on dermatologic epidemiology and health equity, with an emphasis on acne and hidradenitis suppurativa. I build computational tools that support research to address unmet care needs in dermatology. Alongside collaborators who share these goals, this work has contributed to an evidence base for inclusive dermatologic care, with publications in JAMA Dermatology, JAAD, and other high-impact journals.`
+const heroBio = `I've focused on dermatologic epidemiology and health equity, with an emphasis on acne and hidradenitis suppurativa. I build computational tools that address unmet care needs in dermatology. Alongside collaborators who share these goals, this work has contributed to an evidence base for inclusive dermatologic care, with publications in JAMA Dermatology, JAAD, and other high-impact journals.`
 </script>
 
 <template>
@@ -24,7 +24,7 @@ const heroBio = `My research focuses on dermatologic epidemiology and health equ
               {{ siteConfig.name }}
             </h1>
             <p class="mt-2 text-lg text-text-secondary">
-              Physician-Scientist
+              {{ siteConfig.title }}
             </p>
             <p class="mt-4 max-w-[600px] leading-[1.7]">
               {{ heroBio }}

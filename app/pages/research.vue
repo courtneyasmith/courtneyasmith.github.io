@@ -3,7 +3,7 @@ import type { Publication } from '~/types'
 
 useSeoMeta({
   title: 'Research',
-  description: 'Research directions in transgender dermatology, epidemiology, clinical informatics, and health equity.',
+  description: 'Research in epidemiology, clinical informatics, health equity, and transgender dermatology.',
 })
 
 function getPublicationsByIds(ids: string[]): Publication[] {
