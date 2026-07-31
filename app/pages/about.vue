@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'About',
-  description: 'Background, education, and research trajectory of Courtney A. Smith, MD, MS.',
+  description: 'Background, education, and training of Courtney A. Smith, MD, MS.',
 })
 
 const education = [
@@ -55,7 +55,7 @@ const otherService = computed(() => communityService.filter((s) => !s.featured))
     <ScrollReveal :delay="0.1">
       <section class="pb-12 space-y-6">
         <p class="text-text-primary leading-relaxed">
-          I study how computational methods and large-scale data can improve care for patients
+          I've studied how computational methods and large-scale data can improve care for patients
           underrepresented in dermatologic research. My work has included multi-center cohort
           studies on acne and hidradenitis suppurativa in transgender individuals, NLP tools
           for prescription analysis, and epidemiologic work on skin cancer disparities in
@@ -64,8 +64,7 @@ const otherService = computed(() => communityService.filter((s) => !s.featured))
 
         <p class="text-text-primary leading-relaxed">
           I join Harvard Combined Dermatology in 2027. I am looking forward to growing as a
-          clinician, learning from mentors and co-residents, and continuing to develop research
-          questions alongside collaborators who care about equitable dermatologic care.
+          clinician and learning from mentors and co-residents.
         </p>
       </section>
     </ScrollReveal>
