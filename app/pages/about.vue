@@ -36,7 +36,7 @@ const communityService: CommunityService[] = [
     url: 'https://glimmeringbridges.com',
     featured: true,
   },
-  { title: 'Venice Family Clinic — Dermatology Specialty Clinic', role: 'Volunteer', years: '2022–2026', featured: false },
+  { title: 'Venice Family Clinic — Dermatology Specialty Clinic', role: 'Volunteer', years: '2022–2025', featured: false },
   { title: 'LGBTQ Haven Clinic', role: 'Volunteer', years: '2012–2014', featured: false },
   { title: 'Crisis Text Line', role: 'Crisis Counselor', years: '2020–2021', featured: false },
   { title: 'Orange County Behavioral Health Advisory Board', role: 'Commissioner, District 3', years: '2020–2022', featured: false },
@@ -63,8 +63,7 @@ const otherService = computed(() => communityService.filter((s) => !s.featured))
         </p>
 
         <p class="text-text-primary leading-relaxed">
-          I join Harvard Combined Dermatology in 2027. I am looking forward to growing as a
-          clinician and learning from mentors and co-residents.
+          I join Harvard Combined Dermatology in 2027.
         </p>
       </section>
     </ScrollReveal>
