@@ -13,7 +13,6 @@ export const presentations: Presentation[] = [
     "date": "March 28, 2026",
     "year": 2026,
     "type": "oral",
-    "status": "Oral presentation and ePoster accepted",
     "isFirstAuthor": true
   },
   {
@@ -25,7 +24,6 @@ export const presentations: Presentation[] = [
     "date": "March 27-31, 2026",
     "year": 2026,
     "type": "poster",
-    "status": "ePoster accepted",
     "isFirstAuthor": true
   },
   {
@@ -37,7 +35,6 @@ export const presentations: Presentation[] = [
     "date": "March 27-31, 2026",
     "year": 2026,
     "type": "poster",
-    "status": "ePoster accepted",
     "isFirstAuthor": true
   },
   {
@@ -49,7 +46,6 @@ export const presentations: Presentation[] = [
     "date": "March 27, 2026",
     "year": 2026,
     "type": "oral",
-    "status": "Oral presentation and ePoster accepted",
     "isFirstAuthor": true
   },
   {
@@ -61,7 +57,6 @@ export const presentations: Presentation[] = [
     "date": "May 14-19, 2026",
     "year": 2026,
     "type": "poster",
-    "status": "Poster accepted",
     "isFirstAuthor": false
   },
   {
@@ -73,7 +68,6 @@ export const presentations: Presentation[] = [
     "date": "May 14-19, 2026",
     "year": 2026,
     "type": "poster",
-    "status": "Poster accepted",
     "isFirstAuthor": true
   },
   {

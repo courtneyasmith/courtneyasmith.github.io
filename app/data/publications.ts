@@ -177,8 +177,8 @@ export const publications: Publication[] = [
     "isPeerReviewed": true
   },
   {
-    "id": "treatment-of-acne-induced-macular-hyperpigmentation-in-fitzpatrick-skin-types-vv",
-    "title": "Treatment of acne-induced macular hyperpigmentation in Fitzpatrick skin types VVI: a scoping review",
+    "id": "treatment-of-acne-induced-macular-hyperpigmentation-in-fitzpatrick-skin-types-v-",
+    "title": "Treatment of acne-induced macular hyperpigmentation in Fitzpatrick skin types V-VI: a scoping review",
     "authors": "Smith CA, Hogeling M, Cheng C",
     "journal": "Journal of Drugs in Dermatology",
     "year": 2025,
@@ -244,19 +244,6 @@ export const publications: Publication[] = [
     "year": 2025,
     "doi": "10.1007/s13555-024-01324-8",
     "pmid": "39751745",
-    "tags": [
-      "epidemiology"
-    ],
-    "isFirstAuthor": true,
-    "kind": "article",
-    "isPeerReviewed": true
-  },
-  {
-    "id": "association-between-serum-iron-status-and-skin-cancer-odds-a-cross-sectional-stu",
-    "title": "Association between serum iron status and skin cancer odds: A cross-sectional study of adults in the United States",
-    "authors": "Smith CA, Ganz T, Nemeth E, Kuklinski L",
-    "journal": "Clinical, Cosmetic and Investigational Dermatology",
-    "year": 2025,
     "tags": [
       "epidemiology"
     ],
@@ -362,8 +349,8 @@ export const publications: Publication[] = [
     "isPeerReviewed": true
   },
   {
-    "id": "quaternary-centers-by-nickelcatalyzed-cross-coupling-of-tertiary-carboxylic-acid",
-    "title": "Quaternary Centers by NickelCatalyzed Cross-Coupling of Tertiary Carboxylic Acids and (Hetero)Aryl Zinc Reagents",
+    "id": "quaternary-centers-by-nickel-catalyzed-cross-coupling-of-tertiary-carboxylic-aci",
+    "title": "Quaternary Centers by Nickel-Catalyzed Cross-Coupling of Tertiary Carboxylic Acids and (Hetero)Aryl Zinc Reagents",
     "authors": "Chen T-G, Zhang H, Mykhailiuk PK, Merchant RR, Smith CA, Qin T, Baran PS",
     "journal": "Angew. Chem. Int Ed Engl.",
     "year": 2019,
