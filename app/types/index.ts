@@ -69,6 +69,16 @@ export interface CommunityItem {
   sortOrder?: number
 }
 
+export interface Influence {
+  name: string
+  role: string
+}
+
+export interface Favorite {
+  label: string
+  detail: string
+}
+
 export interface SiteConfig {
   name: string
   title: string

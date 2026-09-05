@@ -109,7 +109,7 @@ const otherService = computed(() => communityService.filter((s) => !s.featured))
     </ScrollReveal>
 
     <ScrollReveal :delay="0.4">
-      <section class="py-10 mt-6 mb-12 px-6 rounded-lg bg-bg-secondary border border-border-subtle">
+      <section class="py-10 mt-6 mb-8 px-6 rounded-lg bg-bg-secondary border border-border-subtle">
         <h2 class="font-semibold text-text-primary mb-6 text-[clamp(1.25rem,3vw,1.5rem)]">
           Community &amp; Service
         </h2>
@@ -149,5 +149,7 @@ const otherService = computed(() => communityService.filter((s) => !s.featured))
         </div>
       </section>
     </ScrollReveal>
+
+    <ElsewhereSection />
   </Container>
 </template>
