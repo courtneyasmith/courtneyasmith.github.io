@@ -12,6 +12,13 @@ updates:
       prod-dependencies:
         dependency-type: production
         update-types: [minor, patch]
+    ignore:
+      # 4.6.0 cannot prerender on Windows (nuxt/nuxt#36467); Linux CI would pass it anyway
+      - dependency-name: nuxt
+        versions: ["4.6.0"]
+      # Types follow the Node version CI runs, so majors are bumped by hand alongside node-version
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
     commit-message:
       prefix: deps
 
