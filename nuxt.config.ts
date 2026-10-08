@@ -35,5 +35,5 @@ export default defineNuxtConfig({
       routes: ['/', '/code', '/design-system'],
     },
   },
-  devtools: { enabled: true },
+  devtools: { enabled: false }, // off until GHSA-279x-mwfv-vcqv (unauthenticated DevTools RPC) has a stable fix
 })
