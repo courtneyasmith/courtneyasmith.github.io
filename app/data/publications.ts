@@ -5,6 +5,86 @@ import type { Publication, PublicationTag } from '~/types'
 
 export const publications: Publication[] = [
   {
+    "id": "pseudofolliculitis-barbae-diagnosis-and-treatment-in-us-veterans",
+    "title": "Pseudofolliculitis Barbae Diagnosis and Treatment in US Veterans",
+    "authors": "Smith CA, Collins O, Ohamadike C, Yeung H",
+    "journal": "JAMA Dermatology",
+    "year": 2026,
+    "doi": "10.1001/jamadermatol.2026.3777",
+    "pmid": "42814444",
+    "tags": [],
+    "isFirstAuthor": true,
+    "kind": "article",
+    "isPeerReviewed": true
+  },
+  {
+    "id": "barriers-to-medical-care-among-sexual-and-gender-minority-skin-cancer-survivors",
+    "title": "Barriers to medical care among sexual and gender minority skin cancer survivors",
+    "authors": "Smith CA, Ohamadike C, Deitelzweig C, Nock MR, Cohen JM, Yeung H",
+    "journal": "Archives of Dermatological Research",
+    "year": 2026,
+    "doi": "10.1007/s00403-026-04970-4",
+    "tags": [
+      "epidemiology",
+      "health-equity"
+    ],
+    "isFirstAuthor": true,
+    "kind": "article",
+    "isPeerReviewed": true
+  },
+  {
+    "id": "76483-oral-doxycycline-dosing-and-treatment-pathways-in-acne-a-multi-center-coho",
+    "title": "76483 Oral doxycycline dosing and treatment pathways in acne: A multi-center cohort study, 2010-2022",
+    "authors": "Smith CA, Murdock A, Cheng A, Gunasti J, Bhatt S, Peykova T, Li Y, Yeung H",
+    "journal": "Journal of the American Academy of Dermatology",
+    "year": 2026,
+    "doi": "10.1016/j.jaad.2026.04.1288",
+    "tags": [
+      "epidemiology"
+    ],
+    "isFirstAuthor": true,
+    "kind": "published-abstract",
+    "isPeerReviewed": true
+  },
+  {
+    "id": "71262-pseudofolliculitis-barbae-diagnosis-and-management-in-us-veterans-fiscal-y",
+    "title": "71262 Pseudofolliculitis barbae diagnosis and management in U.S. Veterans, Fiscal Years 2016-2022",
+    "authors": "Smith CA, Gunasti J, Murdock A, Collins O, Yeung H",
+    "journal": "Journal of the American Academy of Dermatology",
+    "year": 2026,
+    "doi": "10.1016/j.jaad.2026.04.1425",
+    "tags": [],
+    "isFirstAuthor": true,
+    "kind": "published-abstract",
+    "isPeerReviewed": true
+  },
+  {
+    "id": "76471-inter-rater-reliability-of-remote-acne-severity-assessment-of-home-photogr",
+    "title": "76471 Inter-rater Reliability of Remote Acne Severity Assessment of Home Photographs by Transmasculine Adults",
+    "authors": "Smith CA, Ohamadike C, Pulminskas A, Deitelzweig C, Abu-Ghosh F, Joshi K, Kitchens E, Gosnell E, Yeung H",
+    "journal": "Journal of the American Academy of Dermatology",
+    "year": 2026,
+    "doi": "10.1016/j.jaad.2026.04.1102",
+    "tags": [
+      "epidemiology"
+    ],
+    "isFirstAuthor": true,
+    "kind": "published-abstract",
+    "isPeerReviewed": true
+  },
+  {
+    "id": "76586-refractory-nasal-pemphigus-vegetans-treated-with-dupilumab-in-a-patient-wi",
+    "title": "76586 Refractory nasal pemphigus vegetans treated with dupilumab in a patient with multiple contraindications to first-line therapies",
+    "authors": "Smith CA, Wongvibulsin S, Lin AJ, Shen A, Rodriguez EDD, Holland VR",
+    "journal": "Journal of the American Academy of Dermatology",
+    "year": 2026,
+    "doi": "10.1016/j.jaad.2026.04.1520",
+    "tags": [],
+    "isFirstAuthor": true,
+    "kind": "published-abstract",
+    "isPeerReviewed": true
+  },
+  {
     "id": "adherence-to-oral-antibiotic-duration-guidelines-for-acne-treatment-in-transgend",
     "title": "Adherence to oral antibiotic duration guidelines for acne treatment in transgender adolescents: a retrospective cohort study",
     "authors": "Smith CA, Yeung H, Cheng C, Hogeling M",
@@ -33,9 +113,9 @@ export const publications: Publication[] = [
     "isPeerReviewed": true
   },
   {
-    "id": "smoking-cessation-and-persistence-in-skin-cancer-survivors-a-cross-sectional-stu",
-    "title": "Smoking cessation and persistence in skin cancer survivors: a cross-sectional study of National Health and Nutrition Examination Survey, 2009-2018",
-    "authors": "Smith CA, Cheng A, Yeung H",
+    "id": "smoking-prevalence-and-cessation-in-skin-cancer-survivors",
+    "title": "Smoking Prevalence and Cessation in Skin Cancer Survivors",
+    "authors": "Smith CA, Cheng A, Escoffery C, Yeung H",
     "journal": "Dermatology",
     "year": 2026,
     "doi": "10.1159/000550995",
@@ -79,8 +159,8 @@ export const publications: Publication[] = [
   },
   {
     "id": "permanent-hair-removal-in-gender-diverse-adults-assigned-male-at-birth-a-cross-s",
-    "title": "Permanent hair removal in gender diverse adults assigned male at birth: a cross-sectional study",
-    "authors": "Smith CA, Das R, Yeung H",
+    "title": "Permanent hair removal in gender-diverse adults assigned male at birth: a cross-sectional study",
+    "authors": "Smith CA, Das RK, Yeung H",
     "journal": "Journal of the American Academy of Dermatology",
     "year": 2025,
     "doi": "10.1016/j.jaad.2025.06.068",
@@ -140,7 +220,7 @@ export const publications: Publication[] = [
     "authors": "Cheng AH, Smith CA, Yeung H",
     "journal": "JID",
     "year": 2025,
-    "doi": "10.1016/S0022-202X(25)02059-7",
+    "doi": "10.1016/j.jid.2025.06.1495",
     "tags": [
       "epidemiology"
     ],
@@ -154,7 +234,7 @@ export const publications: Publication[] = [
     "authors": "Pulminskas A, Smith CA, Joshi K, Rogers J, Deitelzweig C, Gosnell E, Kitchens E, Abu-Ghosh F, Machado K, Yeung H",
     "journal": "JID",
     "year": 2025,
-    "doi": "10.1016/S0022-202X(25)01294-1",
+    "doi": "10.1016/j.jid.2025.06.733",
     "tags": [
       "epidemiology"
     ],
@@ -165,7 +245,7 @@ export const publications: Publication[] = [
   {
     "id": "0687-permanent-hair-removal-and-psychosocial-outcomes-in-transgender-and-gender-",
     "title": "0687 Permanent hair removal and psychosocial outcomes in transgender and gender-diverse adults assigned male at birth: A cross-sectional study",
-    "authors": "Das R, Smith CA, Yeung, H",
+    "authors": "Das RK, Smith CA, Yeung H",
     "journal": "JID",
     "year": 2025,
     "doi": "10.1016/j.jid.2025.06.699",
@@ -179,7 +259,7 @@ export const publications: Publication[] = [
   {
     "id": "treatment-of-acne-induced-macular-hyperpigmentation-in-fitzpatrick-skin-types-v-",
     "title": "Treatment of acne-induced macular hyperpigmentation in Fitzpatrick skin types V-VI: a scoping review",
-    "authors": "Smith CA, Hogeling M, Cheng C",
+    "authors": "Smith CA, Hogeling M, Cheng CE",
     "journal": "Journal of Drugs in Dermatology",
     "year": 2025,
     "doi": "10.36849/JDD.8703",
@@ -237,9 +317,24 @@ export const publications: Publication[] = [
     "isPeerReviewed": true
   },
   {
+    "id": "managing-common-dermatologic-needs-in-transgender-and-gender-diverse-adolescents",
+    "title": "Managing common dermatologic needs in transgender and gender-diverse adolescents",
+    "authors": "Smith CA, Pulminskas A, Rogers J, Fischer A, Deitelzweig C, Ohamadike C, Lawley L, Yeung H",
+    "journal": "Current Pediatrics Reports",
+    "year": 2025,
+    "doi": "10.1007/s40124-025-00344-y",
+    "pmid": "40547400",
+    "tags": [
+      "epidemiology"
+    ],
+    "isFirstAuthor": true,
+    "kind": "article",
+    "isPeerReviewed": true
+  },
+  {
     "id": "hormonal-therapies-for-acne-a-comprehensive-update-for-dermatologists",
     "title": "Hormonal Therapies for Acne: A Comprehensive Update for Dermatologists",
-    "authors": "Smith CA, Gosnell E, Karatas TB, Deitelzweig C, Collins, EMB, Yeung, H",
+    "authors": "Smith CA, Gosnell E, Karatas TB, Deitelzweig C, Collins EMB, Yeung H",
     "journal": "Dermatology and Therapy",
     "year": 2025,
     "doi": "10.1007/s13555-024-01324-8",
@@ -296,8 +391,8 @@ export const publications: Publication[] = [
     "isPeerReviewed": true
   },
   {
-    "id": "isotretinoin-dosing-and-patient-demographics-predict-elevation-of-triglyceride-a",
-    "title": "Isotretinoin dosing and patient demographics predict elevation of triglyceride abnormalities during acne treatment",
+    "id": "311-isotretinoin-dosing-and-patient-demographics-predict-elevation-of-triglyceri",
+    "title": "311 Isotretinoin dosing and patient demographics predict elevation of triglyceride abnormalities during acne treatment",
     "authors": "Smith CA, Pithadia D, Wang D, Hogeling M, Cheng CE",
     "journal": "JID",
     "year": 2024,
@@ -334,21 +429,6 @@ export const publications: Publication[] = [
     "isPeerReviewed": true
   },
   {
-    "id": "managing-common-dermatologic-needs-in-transgender-and-gender-diverse-adolescents",
-    "title": "Managing common dermatologic needs in transgender and gender-diverse adolescents",
-    "authors": "Smith CA, Pulminskas A, Rogers J, Fischer A, Deitelzweig C, Ohamadike C, Lawley L, Yeung H",
-    "journal": "Current Pediatrics Reports",
-    "year": 2024,
-    "doi": "10.1007/s40124-025-00344-y",
-    "pmid": "40547400",
-    "tags": [
-      "epidemiology"
-    ],
-    "isFirstAuthor": true,
-    "kind": "article",
-    "isPeerReviewed": true
-  },
-  {
     "id": "quaternary-centers-by-nickel-catalyzed-cross-coupling-of-tertiary-carboxylic-aci",
     "title": "Quaternary Centers by Nickel-Catalyzed Cross-Coupling of Tertiary Carboxylic Acids and (Hetero)Aryl Zinc Reagents",
     "authors": "Chen T-G, Zhang H, Mykhailiuk PK, Merchant RR, Smith CA, Qin T, Baran PS",
@@ -364,9 +444,24 @@ export const publications: Publication[] = [
     "isPeerReviewed": true
   },
   {
+    "id": "accessing-alternative-reaction-pathways-of-the-intermolecular-condensation-betwe",
+    "title": "Accessing alternative reaction pathways of the intermolecular condensation between homo-propargyl alcohols and terminal alkynes through divergent gold catalysis",
+    "authors": "Smith CA, Motika SE, Wojtas L, Shi X",
+    "journal": "Chem. Comm.",
+    "year": 2017,
+    "doi": "10.1039/c6cc09794d",
+    "pmid": "28074975",
+    "tags": [
+      "chemistry"
+    ],
+    "isFirstAuthor": true,
+    "kind": "article",
+    "isPeerReviewed": true
+  },
+  {
     "id": "gold-catalyzed-vinyl-ether-hydroalkynylation-an-alternative-pathway-for-the-gold",
     "title": "Gold-Catalyzed Vinyl Ether Hydroalkynylation: An Alternative Pathway for the Gold-Catalyzed Intermolecular Reaction of Alkenes and Alkynes",
-    "authors": "Hosseyni S, Smith CA, Wojtas L, Shi X",
+    "authors": "Hosseyni S, Smith CA, Shi X",
     "journal": "Org. Lett.",
     "year": 2016,
     "doi": "10.1021/acs.orglett.6b03228",
@@ -375,21 +470,6 @@ export const publications: Publication[] = [
       "chemistry"
     ],
     "isFirstAuthor": false,
-    "kind": "article",
-    "isPeerReviewed": true
-  },
-  {
-    "id": "accessing-alternative-reaction-pathways-of-the-intermolecular-condensation-betwe",
-    "title": "Accessing alternative reaction pathways of the intermolecular condensation between homo-propargyl alcohols and terminal alkynes through divergent gold catalysis",
-    "authors": "Smith CA, Motika S, Wojtas L, Shi X",
-    "journal": "Chem. Comm.",
-    "year": 2016,
-    "doi": "10.1039/c6cc09794d",
-    "pmid": "28074975",
-    "tags": [
-      "chemistry"
-    ],
-    "isFirstAuthor": true,
     "kind": "article",
     "isPeerReviewed": true
   },
@@ -407,20 +487,6 @@ export const publications: Publication[] = [
     "isFirstAuthor": false,
     "kind": "article",
     "isPeerReviewed": true
-  },
-  {
-    "id": "healthcare-barriers-among-sexual-and-gender-minority-skin-cancer-survivors-a-cro",
-    "title": "Healthcare barriers among sexual and gender minority skin cancer survivors: A cross-sectional analysis",
-    "authors": "Smith CA, Ohamadike C, Deitelzweig C, Nock MR, Cohen JM, Yeung H",
-    "journal": "Unknown Journal",
-    "year": 0,
-    "tags": [
-      "epidemiology",
-      "health-equity"
-    ],
-    "isFirstAuthor": true,
-    "kind": "submitted",
-    "isPeerReviewed": false
   }
 ]
 

@@ -7,7 +7,7 @@ export const presentations: Presentation[] = [
   {
     "id": "inter-rater-reliability-of-remote-acne-severity-assessment-of-home-photographs-b",
     "title": "Inter-rater Reliability of Remote Acne Severity Assessment of Home Photographs by Transmasculine Adults",
-    "authors": "Smith CA, Ohamadike O, Pulminskas A, Deitelzweig C, Abu-Ghosh F, Joshi K, Kitchens E, Gosnell E, Yeung H",
+    "authors": "Smith CA, Ohamadike C, Pulminskas A, Deitelzweig C, Abu-Ghosh F, Joshi K, Kitchens E, Gosnell E, Yeung H",
     "venue": "Annual Meeting of the American Academy of Dermatology",
     "location": "Denver, CO",
     "date": "March 28, 2026",
@@ -49,6 +49,28 @@ export const presentations: Presentation[] = [
     "isFirstAuthor": true
   },
   {
+    "id": "design-and-validation-protocol-for-automated-extraction-of-pediatric-acne-clinic",
+    "title": "Design and validation protocol for automated extraction of pediatric acne clinical features from clinical note text",
+    "authors": "Smith CA, Hogeling M",
+    "venue": "PeDRA Annual Conference",
+    "location": "Alexandria, VA",
+    "date": "October 14-17, 2026",
+    "year": 2026,
+    "type": "poster",
+    "isFirstAuthor": true
+  },
+  {
+    "id": "design-and-validation-protocol-for-automated-extraction-of-pediatric-acne-clinic",
+    "title": "Design and validation protocol for automated extraction of pediatric acne clinical features from clinical note text",
+    "authors": "Smith CA, Hogeling M",
+    "venue": "PeDRA NextGen Research Forum",
+    "location": "Alexandria, VA",
+    "date": "October 17, 2026",
+    "year": 2026,
+    "type": "oral",
+    "isFirstAuthor": true
+  },
+  {
     "id": "acne-severity-and-quality-of-life-in-transgender-patients-on-gender-affirming-ho",
     "title": "Acne severity and quality of life in transgender patients on gender-affirming hormone therapy: a pilot longitudinal cohort",
     "authors": "Gunasti J, Joshi K, Pulminskas A, Rogers J, Deitelzweig C, Ohamadike C, Smith CA, Abu-Ghosh F, Kitchens E, Yeung H",
@@ -66,6 +88,17 @@ export const presentations: Presentation[] = [
     "venue": "SID Annual Meeting",
     "location": "Chicago, IL",
     "date": "May 14-19, 2026",
+    "year": 2026,
+    "type": "poster",
+    "isFirstAuthor": true
+  },
+  {
+    "id": "validation-of-a-multi-source-electronic-health-record-algorithm-for-transgender-",
+    "title": "Validation of a Multi-Source Electronic Health Record Algorithm for Transgender and Gender-Diverse Adolescent Cohorts",
+    "authors": "Smith CA, Villanueva A, Arcos Flautero J, Khan M, Galamgam J, Cheng CE, Hogeling M",
+    "venue": "WPATH 29th Scientific Symposium",
+    "location": "Mexico City, Mexico",
+    "date": "November 7-12, 2026",
     "year": 2026,
     "type": "poster",
     "isFirstAuthor": true
@@ -139,7 +172,7 @@ export const presentations: Presentation[] = [
   {
     "id": "acne-incidence-and-severity-in-transgender-adults-a-multi-center-cohort-study-si",
     "title": "Acne incidence and severity in transgender adults: a multi-center cohort study",
-    "authors": "Smith CA, Kaabi O, Joshi K, Chen, SC, Tangpricha V, Goodman M, Yeung H",
+    "authors": "Smith CA, Kaabi O, Joshi K, Chen SC, Tangpricha V, Goodman M, Yeung H",
     "venue": "SID Annual Meeting",
     "location": "San Diego, CA",
     "date": "May 8, 2025",
@@ -150,7 +183,7 @@ export const presentations: Presentation[] = [
   {
     "id": "acne-incidence-and-severity-in-transgender-adults-a-multi-center-cohort-study-si",
     "title": "Acne incidence and severity in transgender adults: a multi-center cohort study",
-    "authors": "Smith CA, Kaabi O, Joshi K, Chen, SC, Tangpricha V, Goodman M, Yeung H",
+    "authors": "Smith CA, Kaabi O, Joshi K, Chen SC, Tangpricha V, Goodman M, Yeung H",
     "venue": "SID Annual Meeting",
     "location": "San Diego, CA",
     "date": "May 5, 2025",
@@ -192,9 +225,9 @@ export const presentations: Presentation[] = [
     "isFirstAuthor": false
   },
   {
-    "id": "das-r-smith-ca-yeung-h-permanent-hair-removal-in-gender-diverse-adults-assigned-",
-    "title": "Das R, Smith CA, Yeung, H. Permanent hair removal in gender diverse adults assigned male at birth: a cross-sectional study",
-    "authors": "",
+    "id": "permanent-hair-removal-in-gender-diverse-adults-assigned-male-at-birth-a-cross-s",
+    "title": "Permanent hair removal in gender diverse adults assigned male at birth: a cross-sectional study",
+    "authors": "Das R, Smith CA, Yeung H",
     "venue": "SID Annual Meeting",
     "location": "San Diego, CA",
     "date": "May 5, 2025",
