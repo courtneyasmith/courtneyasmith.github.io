@@ -54,7 +54,7 @@ export const presentations: Presentation[] = [
     "authors": "Smith CA, Hogeling M",
     "venue": "PeDRA Annual Conference",
     "location": "Alexandria, VA",
-    "date": "October 14-17, 2026",
+    "date": "October 15, 2026",
     "year": 2026,
     "type": "poster",
     "isFirstAuthor": true
