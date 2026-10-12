@@ -10,8 +10,9 @@ const socialLinks = computed(() =>
 
 <template>
   <footer class="py-8 mt-12 border-t border-border">
-    <div class="text-center">
-      <p class="font-medium text-text-primary">{{ siteConfig.name }}</p>
+    <!-- mx-auto on each <p>: the global 65ch paragraph cap otherwise pins them left of the centered links -->
+    <Container class="text-center">
+      <p class="mx-auto font-medium text-text-primary">{{ siteConfig.name }}</p>
       <a
         :href="`mailto:${siteConfig.email}`"
         class="text-sm text-text-secondary hover:text-accent transition-colors"
@@ -32,7 +33,7 @@ const socialLinks = computed(() =>
         </a>
       </div>
 
-      <p class="text-sm text-text-secondary mt-4">&copy; 2026</p>
-    </div>
+      <p class="mx-auto text-sm text-text-secondary mt-4">&copy; 2026</p>
+    </Container>
   </footer>
 </template>

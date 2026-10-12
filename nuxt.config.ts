@@ -31,8 +31,16 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      // /code and /design-system are not linked from nav, so list them explicitly
-      routes: ['/', '/code', '/design-system'],
+      routes: ['/'],
+    },
+  },
+  $production: {
+    hooks: {
+      // /design-system is a developer reference: `npm run dev` serves it, production builds drop the route so the public URL 404s
+      'pages:extend'(pages) {
+        const index = pages.findIndex((page) => page.path === '/design-system')
+        if (index !== -1) pages.splice(index, 1)
+      },
     },
   },
   devtools: { enabled: false }, // off until GHSA-279x-mwfv-vcqv (unauthenticated DevTools RPC) has a stable fix
