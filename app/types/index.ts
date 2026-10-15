@@ -79,6 +79,27 @@ export interface Favorite {
   detail: string
 }
 
+export interface PosterReference {
+  poster: number
+  year: number
+  authors: string
+  title: string
+  containerPrefix?: string
+  container: string
+  details: string
+  doi?: string
+  pmid?: string
+}
+
+export interface PosterReferenceRange {
+  first: number
+  last: number
+}
+
+export interface PosterReferenceGroup extends PosterReferenceRange {
+  title: string
+}
+
 export interface SiteConfig {
   name: string
   title: string

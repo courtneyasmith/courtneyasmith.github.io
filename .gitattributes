@@ -8,3 +8,6 @@
 # change here means somebody changed data. A file that looks modified after a
 # no-op run erodes exactly that signal, and makes a real change easy to miss.
 db/seed.sql text eol=lf
+
+# vCard requires CRLF line endings; without this rule the Linux CI checkout would publish public/courtney-a-smith.vcf with LF
+*.vcf text eol=crlf

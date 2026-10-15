@@ -1,0 +1,121 @@
+<script setup lang="ts">
+import type { PosterReference } from '~/types'
+
+const props = defineProps<{ reference: PosterReference }>()
+
+const talk = computed(() => pedra2026TalkNumber(props.reference.poster))
+</script>
+
+<template>
+  <li :id="`ref-${reference.poster}`" class="ref">
+    <div class="num">
+      <span class="num-poster">{{ reference.poster }}</span>
+      <span v-if="talk" class="num-talk">talk {{ talk }}</span>
+    </div>
+    <div>
+      <p class="cite">
+        {{ reference.authors }} <span class="cite-title">{{ reference.title }}.</span> {{ reference.containerPrefix }}<em>{{ reference.container }}</em>. {{ reference.details }}.<template v-if="reference.doi"> doi:<a :href="`https://doi.org/${reference.doi}`" target="_blank" rel="noopener noreferrer">{{ reference.doi }}</a></template>
+      </p>
+      <p v-if="reference.pmid" class="links">
+        <a :href="`https://pubmed.ncbi.nlm.nih.gov/${reference.pmid}/`" target="_blank" rel="noopener noreferrer">PubMed</a>
+      </p>
+    </div>
+  </li>
+</template>
+
+<style scoped>
+.ref {
+  --ref-gutter: 2.5rem;
+  display: grid;
+  grid-template-columns: var(--ref-gutter) 1fr;
+  column-gap: 0.25rem;
+  margin: 0 -0.5rem;
+  padding: 0.875rem 0.5rem;
+  border-radius: 6px;
+  scroll-margin-top: 6.5rem;
+}
+
+/* A reference reached from the dot plot or a superscript flashes once so the eye finds it */
+.ref:target {
+  animation: ref-land 2.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes ref-land {
+  0%,
+  35% {
+    background-color: var(--color-accent-subtle);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.num {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.0625rem;
+  line-height: 1.25;
+}
+
+.num-poster {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+.num-talk {
+  margin-top: 0.25rem;
+  font-size: 0.6875rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.cite {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  overflow-wrap: break-word;
+}
+
+.cite-title {
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+/* Links inside citation text need more than color to stand out (WCAG 1.4.1), so they carry a quiet underline */
+.cite a {
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: color-mix(in oklch, currentColor 40%, transparent);
+}
+
+.cite a:hover {
+  text-decoration-color: currentColor;
+}
+
+.links {
+  margin-top: 0.25rem;
+  font-size: 0.8125rem;
+}
+
+@media (min-width: 640px) {
+  .ref {
+    --ref-gutter: 2.75rem;
+  }
+}
+
+/* From desktop width the number column hangs in the margin so citations align with the body text */
+@media (min-width: 1024px) {
+  .ref {
+    margin-left: calc(-1 * var(--ref-gutter) - 0.5rem);
+  }
+
+  .num {
+    align-items: flex-end;
+    padding-right: 1rem;
+  }
+}
+</style>
