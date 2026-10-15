@@ -31,7 +31,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/'],
+      routes: ['/', '/pedra2026'], // /pedra2026 is reached only through the PeDRA poster QR code, so the crawler would never find it
     },
   },
   $production: {
@@ -43,5 +43,5 @@ export default defineNuxtConfig({
       },
     },
   },
-  devtools: { enabled: false }, // off until GHSA-279x-mwfv-vcqv (unauthenticated DevTools RPC) has a stable fix
+  devtools: { enabled: false }, // off while npm audit flags @nuxt/devtools through simple-git (GHSA-x6jw-m9v5-85vh); no fix short of downgrading Nuxt
 })

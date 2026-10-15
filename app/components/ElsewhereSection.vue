@@ -12,9 +12,7 @@
           <ScrollReveal :delay="0.1 + 0.05 * index" :duration="0.5">
             <span class="pill">
               <span class="pill-name">{{ person.name }}</span>
-              <span class="pill-role-track">
-                <span class="pill-role">{{ person.role }}</span>
-              </span>
+              <span class="pill-role">{{ person.role }}</span>
             </span>
           </ScrollReveal>
         </li>
@@ -24,7 +22,7 @@
     <div class="mt-12">
       <ScrollReveal>
         <h2 class="font-semibold text-text-primary text-[clamp(1.25rem,3vw,1.5rem)]">
-          Things that Bring Joy
+          Things that bring joy
         </h2>
       </ScrollReveal>
 
@@ -49,7 +47,7 @@
 </template>
 
 <style scoped>
-/* The solid fill is a gradient layer so it can sweep left-to-right, in the same direction the pill opens. */
+/* The solid fill is a gradient layer so it can sweep left to right on hover. */
 .pill {
   display: inline-flex;
   align-items: baseline;
@@ -66,47 +64,20 @@
   transition: background-size 400ms cubic-bezier(0.22, 1, 0.36, 1), color 250ms ease-out, transform 250ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* A 0fr to 1fr grid column animates width without measuring the text in JavaScript. */
-.pill-role-track {
-  display: grid;
-  grid-template-columns: 1fr;
-  transition: grid-template-columns 400ms cubic-bezier(0.22, 1, 0.36, 1);
-}
-
+/* Roles stay visible: revealing them on hover widened the pill, which re-wrapped the row out from under the cursor and flickered. */
 .pill-role {
-  min-width: 0;
-  overflow: hidden;
   white-space: nowrap;
   padding-left: 0.5rem;
   font-size: 0.8125rem;
   font-weight: 400;
   opacity: 0.85;
-  transition: opacity 250ms ease-out 100ms, transform 400ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @media (hover: hover) {
-  .pill-role-track {
-    grid-template-columns: 0fr;
-  }
-
-  .pill-role {
-    opacity: 0;
-    transform: translateX(-0.5rem);
-  }
-
   li:hover .pill {
     background-size: 100% 100%;
     color: var(--color-bg-primary);
     transform: translateY(-2px);
-  }
-
-  li:hover .pill-role-track {
-    grid-template-columns: 1fr;
-  }
-
-  li:hover .pill-role {
-    opacity: 0.9;
-    transform: translateX(0);
   }
 
   .favorite-label {
