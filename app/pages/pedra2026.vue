@@ -8,11 +8,17 @@ const referenceGroups = pedra2026ReferenceGroups.map((group) => ({
   ...group,
   references: pedra2026ReferencesIn(group),
 }))
+
+// From desktop width the column widens to 42rem of text, the figure's width, so text and figure share both edges
+const columnClass = 'lg:max-w-[48rem]'
+
+// Credentials stay together, so a phone wraps after "Smith," instead of leaving "MS" alone on a line
+const [closingPerson, ...closingCredentials] = siteConfig.name.split(', ')
 </script>
 
 <template>
   <div>
-    <Container size="prose">
+    <Container size="prose" :class="columnClass">
       <header class="pt-12">
         <h1 class="title">Extracting Pediatric Acne Features from Clinical Notes</h1>
         <p class="subtitle">Design and Validation Protocol</p>
@@ -35,7 +41,7 @@ const referenceGroups = pedra2026ReferenceGroups.map((group) => ({
       </p>
 
       <section class="figure-section" aria-labelledby="literature-heading">
-        <h2 id="literature-heading" class="section-heading">Where automated acne research has looked</h2>
+        <h2 id="literature-heading" class="section-heading">Acne data extraction literature</h2>
         <LiteratureDotPlot />
       </section>
 
@@ -64,11 +70,11 @@ const referenceGroups = pedra2026ReferenceGroups.map((group) => ({
     </Container>
 
     <section class="closing" aria-labelledby="closing-heading">
-      <Container size="prose">
+      <Container size="prose" :class="columnClass">
         <div class="closing-head">
           <img src="/images/headshot_2025-09-23_192.jpg" alt="" width="80" height="80" class="closing-photo">
           <div>
-            <h2 id="closing-heading" class="closing-name">{{ siteConfig.name }}</h2>
+            <h2 id="closing-heading" class="closing-name">{{ closingPerson }}, <span class="nowrap">{{ closingCredentials.join(', ') }}</span></h2>
             <p class="closing-role">Incoming dermatology resident, Harvard Combined Dermatology Residency</p>
           </div>
         </div>
@@ -90,6 +96,11 @@ const referenceGroups = pedra2026ReferenceGroups.map((group) => ({
 </template>
 
 <style scoped>
+/* The global 65ch cap would stop paragraphs short of the figure's right edge; here the column is the measure */
+p {
+  max-width: none;
+}
+
 .title {
   font-size: clamp(1.75rem, 4.6vw, 2.5rem);
   letter-spacing: -0.012em;

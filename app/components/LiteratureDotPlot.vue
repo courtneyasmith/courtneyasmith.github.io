@@ -449,13 +449,6 @@ sup {
   }
 }
 
-/* On desktop the figure runs a little wider than the text column, as journals set figures */
-@media (min-width: 1024px) {
-  .lit {
-    margin-inline: -3rem;
-  }
-}
-
 /* The page's one authored moment: stacks build up year by year, then this study lands with a single ring */
 @media (prefers-reduced-motion: no-preference) {
   .is-armed .dot {
