@@ -4,6 +4,12 @@ import type { PosterReference } from '~/types'
 const props = defineProps<{ reference: PosterReference }>()
 
 const talk = computed(() => pedra2026TalkNumber(props.reference.poster))
+
+// Volume and pages stay on one line: a break at the hyphen in a page range strands the last page
+const details = computed(() => {
+  const split = props.reference.details.lastIndexOf(' ') + 1
+  return { lead: props.reference.details.slice(0, split), tail: props.reference.details.slice(split) }
+})
 </script>
 
 <template>
@@ -14,7 +20,7 @@ const talk = computed(() => pedra2026TalkNumber(props.reference.poster))
     </div>
     <div>
       <p class="cite">
-        {{ reference.authors }} <span class="cite-title">{{ reference.title }}.</span> {{ reference.containerPrefix }}<em>{{ reference.container }}</em>. {{ reference.details }}.<template v-if="reference.doi"> doi:<a :href="`https://doi.org/${reference.doi}`" target="_blank" rel="noopener noreferrer">{{ reference.doi }}</a></template>
+        {{ reference.authors }} <span class="cite-title">{{ reference.title }}.</span> {{ reference.containerPrefix }}<em>{{ reference.container }}</em>. {{ details.lead }}<span class="nowrap">{{ details.tail }}.</span><template v-if="reference.doi"> doi:<a :href="`https://doi.org/${reference.doi}`" target="_blank" rel="noopener noreferrer">{{ reference.doi }}</a></template>
       </p>
       <p v-if="reference.pmid" class="links">
         <a :href="`https://pubmed.ncbi.nlm.nih.gov/${reference.pmid}/`" target="_blank" rel="noopener noreferrer">PubMed</a>
@@ -71,7 +77,9 @@ const talk = computed(() => pedra2026TalkNumber(props.reference.poster))
   white-space: nowrap;
 }
 
+/* Citations run the full column like the rest of the page instead of stopping at the global 65ch cap */
 .cite {
+  max-width: none;
   font-size: 0.9375rem;
   line-height: 1.6;
   color: var(--color-text-secondary);
@@ -96,6 +104,10 @@ const talk = computed(() => pedra2026TalkNumber(props.reference.poster))
   text-decoration-color: currentColor;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .links {
   margin-top: 0.25rem;
   font-size: 0.8125rem;
@@ -107,10 +119,10 @@ const talk = computed(() => pedra2026TalkNumber(props.reference.poster))
   }
 }
 
-/* From desktop width the number column hangs in the margin so citations align with the body text */
+/* From desktop width the number column hangs in the margin so citations align with the body text; 0.75rem is the row padding plus the column gap */
 @media (min-width: 1024px) {
   .ref {
-    margin-left: calc(-1 * var(--ref-gutter) - 0.5rem);
+    margin-left: calc(-1 * var(--ref-gutter) - 0.75rem);
   }
 
   .num {
