@@ -420,8 +420,9 @@ sup {
     white-space: nowrap;
   }
 
+  /* Inset by the bar's padding as well, so the text starts on the bar's left edge and the 2010 tick */
   .lit-desc {
-    margin: 0.875rem 1.25rem 0;
+    margin: 0.875rem 2.25rem 0;
   }
 
   .lit-plot {

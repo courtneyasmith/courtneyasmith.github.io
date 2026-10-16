@@ -63,7 +63,7 @@ const otherService = computed(() => communityService.filter((s) => !s.featured))
         </p>
 
         <p class="text-text-primary leading-relaxed">
-          I join Harvard Combined Dermatology in 2027.
+          I join the Harvard Combined Dermatology Residency in 2027.
         </p>
       </section>
     </ScrollReveal>
