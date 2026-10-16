@@ -18,7 +18,7 @@ export const favorites: Favorite[] = [
   { label: 'Watching', detail: 'Sinners, I Am Legend, The Butterfly Effect.' },
   {
     label: 'Listening',
-    detail: "Panic! at the Disco's A Fever You Can't Sweat Out, Lady Gaga, Kingdom Hearts orchestral music, and the Doja Cat playlist I write every manuscript and grant to.",
+    detail: "Panic! at the Disco's A Fever You Can't Sweat Out, Lady Gaga, Kingdom Hearts orchestral music, and Doja Cat for writing.",
   },
   { label: 'Eating', detail: 'Boiled peanuts and Oaxacan food, especially enchiladas.' },
 ]
