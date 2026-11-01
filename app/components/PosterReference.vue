@@ -1,15 +1,17 @@
 <script setup lang="ts">
 import type { PosterReference } from '~/types'
 
-const props = defineProps<{ reference: PosterReference }>()
-
-const talk = computed(() => pedra2026TalkNumber(props.reference.poster))
+// The talk number is the caller's: only the PeDRA page has a talk whose numbering differs from the poster's
+const props = defineProps<{ reference: PosterReference; talk?: number }>()
 
 // Volume and pages stay on one line: a break at the hyphen in a page range strands the last page
 const details = computed(() => {
   const split = props.reference.details.lastIndexOf(' ') + 1
   return { lead: props.reference.details.slice(0, split), tail: props.reference.details.slice(split) }
 })
+
+// AMA drops the closing period after a title that already ends in a question or exclamation mark
+const titleEnd = computed(() => (/[?!]$/.test(props.reference.title) ? '' : '.'))
 </script>
 
 <template>
@@ -20,7 +22,7 @@ const details = computed(() => {
     </div>
     <div>
       <p class="cite">
-        {{ reference.authors }} <span class="cite-title">{{ reference.title }}.</span> {{ reference.containerPrefix }}<em>{{ reference.container }}</em>. {{ details.lead }}<span class="nowrap">{{ details.tail }}.</span><template v-if="reference.doi"> doi:<a :href="`https://doi.org/${reference.doi}`" target="_blank" rel="noopener noreferrer">{{ reference.doi }}</a></template>
+        {{ reference.authors }} <span class="cite-title">{{ reference.title }}{{ titleEnd }}</span> {{ reference.containerPrefix }}<em>{{ reference.container }}</em>. {{ details.lead }}<span class="nowrap">{{ details.tail }}.</span><template v-if="reference.doi"> doi:<a :href="`https://doi.org/${reference.doi}`" target="_blank" rel="noopener noreferrer">{{ reference.doi }}</a></template>
       </p>
       <p v-if="reference.pmid" class="links">
         <a :href="`https://pubmed.ncbi.nlm.nih.gov/${reference.pmid}/`" target="_blank" rel="noopener noreferrer">PubMed</a>

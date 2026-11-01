@@ -59,6 +59,15 @@
   --color-accent-hover: oklch(43% 0.16 250);
   --color-accent-subtle: oklch(95% 0.04 250);
 
+  /* WPATH 2026 poster palette, used only on /wpath2026: the poster's teal, and its Venn diagram's purple for single-source and orange for multi-source data. The orange is deepened from the poster's so marks and labels pass AA on their tints */
+  --color-wpath-teal: oklch(43% 0.07 202);
+  --color-wpath-teal-hover: oklch(36% 0.07 202);
+  --color-wpath-teal-subtle: oklch(90% 0.045 202);
+  --color-source-single: oklch(46% 0.128 296);
+  --color-source-single-tint: oklch(91.5% 0.032 302);
+  --color-source-multi: oklch(55% 0.15 52);
+  --color-source-multi-tint: oklch(94% 0.04 70);
+
   /* Border Colors - Warm light gray */
   --color-border: oklch(90% 0.01 60);
   --color-border-subtle: oklch(94% 0.006 60);

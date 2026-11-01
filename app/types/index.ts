@@ -100,6 +100,26 @@ export interface PosterReferenceGroup extends PosterReferenceRange {
   title: string
 }
 
+// Age groups and data kinds of published TGD identification studies; the kinds are the Becker 2026 review's identifier categories
+export type IdentificationAges = 'adults' | 'mixed' | 'unreported' | 'youth'
+export type IdentificationDataKind = 'codes' | 'otherCoded' | 'noteText' | 'codesWithOther' | 'codedWithNotes'
+
+export interface IdentificationStudy {
+  ref: number
+  name: string
+  year: number
+  ages: IdentificationAges
+  kinds: IdentificationDataKind[]
+}
+
+// The coverage quilt's live text: a bold lead, the sentence, an optional citation that ends it, and text after the citation
+export interface CoverageReadout {
+  lead?: string
+  text: string
+  cite?: number
+  after?: string
+}
+
 export interface SiteConfig {
   name: string
   title: string

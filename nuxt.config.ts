@@ -31,7 +31,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/pedra2026'], // /pedra2026 is reached only through the PeDRA poster QR code, so the crawler would never find it
+      routes: ['/', '/pedra2026', '/wpath2026'], // /pedra2026 and /wpath2026 are reached only through the posters' QR codes, so the crawler would never find them
     },
   },
   $production: {
