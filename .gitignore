@@ -58,6 +58,9 @@ src/utils/
 .cursorignore
 .dropboxignore
 .impeccable.md
+.impeccable/
+.cursor/
+.codex/
 CLAUDE.md
 **/CLAUDE.md
 .claude/
