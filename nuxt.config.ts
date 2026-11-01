@@ -35,6 +35,28 @@ export default defineNuxtConfig({
     },
   },
   $production: {
+    app: {
+      head: {
+        meta: [
+          // 'unsafe-inline': scripts for the inline window.__NUXT__ config and importmap, whose per-build buildId would change any hash every build; styles for Nuxt's inlined component <style> blocks and server-rendered :style attributes; nothing loads from other hosts, so the rest stays 'self'
+          {
+            'http-equiv': 'content-security-policy', // lowercase is what unhead matches to sort it ahead of every script
+            content: [
+              "default-src 'self'",
+              "script-src 'self' 'unsafe-inline'",
+              "style-src 'self' 'unsafe-inline'",
+              "img-src 'self' data:",
+              "font-src 'self'",
+              "connect-src 'self'",
+              "object-src 'none'",
+              "base-uri 'self'",
+              "form-action 'self'",
+              'upgrade-insecure-requests',
+            ].join('; '),
+          },
+        ],
+      },
+    },
     hooks: {
       // /design-system is a developer reference: `npm run dev` serves it, production builds drop the route so the public URL 404s
       'pages:extend'(pages) {
