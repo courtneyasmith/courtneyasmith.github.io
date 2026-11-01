@@ -90,9 +90,22 @@ function toggle() {
   inset: calc(-0.25rem - 1px) -1px;
 }
 
-.chip:hover {
-  border-color: var(--color-text-muted);
-  color: var(--color-text-primary);
+/* Hover only where a pointer can hover: on a phone a tap would otherwise leave the hover shade on until the next tap elsewhere */
+@media (hover: hover) {
+  .chip:hover {
+    border-color: var(--color-text-muted);
+    color: var(--color-text-primary);
+  }
+
+  .row:hover {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+  }
+
+  :root[data-reading-font='lexend'] .chip:hover {
+    border-color: var(--color-accent-hover);
+    background-color: var(--color-accent-hover);
+  }
 }
 
 .chip:active {
@@ -128,11 +141,6 @@ function toggle() {
   transition: background-color 150ms ease-out, color 150ms ease-out;
 }
 
-.row:hover {
-  background-color: var(--color-bg-secondary);
-  color: var(--color-text-primary);
-}
-
 .state {
   min-width: 2.75rem;
   padding: 0.0625rem 0.625rem;
@@ -149,11 +157,6 @@ function toggle() {
   border-color: var(--color-accent);
   background-color: var(--color-accent);
   color: var(--color-bg-primary);
-}
-
-:root[data-reading-font='lexend'] .chip:hover {
-  border-color: var(--color-accent-hover);
-  background-color: var(--color-accent-hover);
 }
 
 /* Forced colors would repaint the fill as background, leaving on and off identical */
