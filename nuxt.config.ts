@@ -22,6 +22,8 @@ export default defineNuxtConfig({
       script: [
         // Applies a saved reading-font choice before first paint so a returning reader never sees Literata flash; storage access throws when it is blocked
         { innerHTML: "try{if(localStorage.getItem('reading-font')==='lexend')document.documentElement.dataset.readingFont='lexend'}catch{}" },
+        // Lets scroll-reveal content start hidden; if the app has not mounted 3s in (a blocked, failed or very slow bundle), the class comes off, the content fades in, and later pages of that visit skip the reveal
+        { innerHTML: "document.documentElement.classList.add('reveal-ready');setTimeout(function(){var a=document.getElementById('__nuxt');if(!(a&&a.__vue_app__))document.documentElement.classList.remove('reveal-ready')},3000)" },
       ],
     },
   },

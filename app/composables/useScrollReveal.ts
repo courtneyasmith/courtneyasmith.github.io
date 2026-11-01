@@ -1,4 +1,4 @@
-import { ref, computed, onMounted, onBeforeUnmount, type Ref } from 'vue'
+import { ref, onMounted, onBeforeUnmount, type Ref } from 'vue'
 
 type Direction = 'up' | 'down' | 'left' | 'right'
 
@@ -15,11 +15,9 @@ export function useScrollReveal(
 ) {
   const { direction = 'up', delay = 0, duration = 0.7 } = opts
   const visible = ref(false)
-  const reduced = ref(false)
   let observer: IntersectionObserver | null = null
 
   onMounted(() => {
-    reduced.value = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     if (!el.value) {
       visible.value = true
       return
@@ -40,21 +38,13 @@ export function useScrollReveal(
 
   onBeforeUnmount(() => observer?.disconnect())
 
-  const style = computed(() => {
-    // Reduced motion: fade only, no slide (drops vestibular-triggering transform).
-    if (reduced.value) {
-      return {
-        opacity: visible.value ? 1 : 0,
-        transition: `opacity ${duration}s cubic-bezier(0.22,1,0.36,1) ${delay}s`,
-      }
-    }
-    const o = offsets[direction]
-    return {
-      opacity: visible.value ? 1 : 0,
-      transform: visible.value ? 'translate(0,0)' : `translate(${o.x}px, ${o.y}px)`,
-      transition: `opacity ${duration}s cubic-bezier(0.22,1,0.36,1) ${delay}s, transform ${duration}s cubic-bezier(0.22,1,0.36,1) ${delay}s`,
-    }
-  })
+  // The hidden start state lives in main.css behind the reveal-ready class the head script sets, so server HTML stays readable when scripts never run; this only feeds it the offset and timing. Reduced motion drops the slide there too, in CSS, because the server cannot know the preference
+  const o = offsets[direction]
+  const style = {
+    '--reveal-x': `${o.x}px`,
+    '--reveal-y': `${o.y}px`,
+    transition: `opacity ${duration}s cubic-bezier(0.22,1,0.36,1) ${delay}s, transform ${duration}s cubic-bezier(0.22,1,0.36,1) ${delay}s`,
+  }
 
-  return { style }
+  return { style, visible }
 }

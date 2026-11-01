@@ -161,9 +161,24 @@
     max-width: 65ch;
   }
 
+  /* Scroll reveal (ScrollReveal.vue): content starts hidden only once the head script marks <html> reveal-ready, so it stays readable when JavaScript is off or its bundle fails; screen only, so unrevealed sections still print */
+  @media screen {
+    :root.reveal-ready .scroll-reveal:not(.is-visible) {
+      opacity: 0;
+      transform: translate(var(--reveal-x, 0), var(--reveal-y, 0));
+    }
+  }
+
+  /* Reduced motion keeps the fade and drops the slide */
+  @media screen and (prefers-reduced-motion: reduce) {
+    :root.reveal-ready .scroll-reveal:not(.is-visible) {
+      transform: none;
+    }
+  }
+
   /* Reduced Motion */
   @media (prefers-reduced-motion: reduce) {
-    /* .scroll-reveal is exempt so its opacity fade survives (slide is dropped in JS). */
+    /* .scroll-reveal is exempt so its opacity fade survives (the reveal rule above drops the slide). */
     *:not(.scroll-reveal), *::before, *::after {
       animation-duration: 0.01ms !important;
       animation-iteration-count: 1 !important;

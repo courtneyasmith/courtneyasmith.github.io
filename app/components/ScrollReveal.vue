@@ -9,7 +9,7 @@ const props = withDefaults(
   { direction: 'up', delay: 0, duration: 0.7, class: '' },
 )
 const el = ref<HTMLElement | null>(null)
-const { style } = useScrollReveal(el, {
+const { style, visible } = useScrollReveal(el, {
   direction: props.direction,
   delay: props.delay,
   duration: props.duration,
@@ -17,7 +17,7 @@ const { style } = useScrollReveal(el, {
 </script>
 
 <template>
-  <div ref="el" :class="['scroll-reveal', props.class]" :style="style">
+  <div ref="el" :class="['scroll-reveal', { 'is-visible': visible }, props.class]" :style="style">
     <slot />
   </div>
 </template>
