@@ -21,6 +21,9 @@ updates:
         update-types: ["version-update:semver-major"]
     commit-message:
       prefix: deps
+    # Wait two weeks before proposing a new release, so a hijacked one is usually caught and pulled first; security updates are exempt
+    cooldown:
+      default-days: 14
 
   - package-ecosystem: github-actions
     directory: /
@@ -29,3 +32,5 @@ updates:
       day: monday
     commit-message:
       prefix: ci
+    cooldown:
+      default-days: 14
