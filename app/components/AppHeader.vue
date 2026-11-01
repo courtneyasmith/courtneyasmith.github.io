@@ -26,7 +26,9 @@ const headerClasses = computed(() => [
   scrollState.value === 'revealed' && 'translate-y-0 border-border-subtle shadow-sm',
 ])
 
-const headerHeight = 73
+const header = ref<HTMLElement | null>(null)
+// The menu opens right under the header, measured on opening: the header is 89px on phones and taller where the name wraps, so the old fixed 73px covered its lower edge
+const menuTop = ref(0)
 
 function onKeydown(e: KeyboardEvent) {
   if (e.key === 'Escape') {
@@ -48,6 +50,7 @@ function onKeydown(e: KeyboardEvent) {
 watch(isMenuOpen, (open) => {
   setMenuOpen(open)
   if (open) {
+    menuTop.value = header.value?.offsetHeight ?? 0
     const prevOverflow = document.body.style.overflow
     document.body.dataset.prevOverflow = prevOverflow
     document.body.style.overflow = 'hidden'
@@ -66,39 +69,45 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <header :class="headerClasses">
+  <header ref="header" :class="headerClasses">
+    <!-- Inline links start at lg, where the font toggle has room for its label; below that, phones and tablets get the menu button and the toggle spelled out in the menu -->
     <nav
       aria-label="Main navigation"
       class="flex items-center justify-between mx-auto w-full max-w-[1100px] px-6"
     >
-      <NuxtLink to="/" class="text-xl font-semibold text-text-primary hover:text-accent transition-colors">
+      <!-- On phones the name scales from 16px at 360 wide to 20px, so it, the font toggle and the menu button share one line (narrower screens wrap it in balanced lines); tracking-normal keeps the reading font's extra letter spacing off the wordmark -->
+      <NuxtLink to="/" class="text-balance tracking-normal text-[length:clamp(1rem,7.25vw_-_0.62rem,1.25rem)] md:text-xl font-semibold text-text-primary hover:text-accent transition-colors">
         {{ siteConfig.name }}
       </NuxtLink>
 
-      <ul class="hidden md:flex items-center gap-6">
-        <li v-for="item in navItems" :key="item.href">
-          <NuxtLink
-            :to="item.href"
-            :aria-current="isActive(item.href) ? 'page' : undefined"
-            :class="['text-base transition-colors', isActive(item.href) ? 'text-accent font-medium' : 'text-text-secondary hover:text-text-primary']"
-          >{{ item.label }}</NuxtLink>
-        </li>
-      </ul>
+      <div class="flex items-center gap-1 lg:gap-6">
+        <ul class="hidden lg:flex items-center gap-6">
+          <li v-for="item in navItems" :key="item.href">
+            <NuxtLink
+              :to="item.href"
+              :aria-current="isActive(item.href) ? 'page' : undefined"
+              :class="['text-base transition-colors', isActive(item.href) ? 'text-accent font-medium' : 'text-text-secondary hover:text-text-primary']"
+            >{{ item.label }}</NuxtLink>
+          </li>
+        </ul>
 
-      <button
-        ref="menuButton"
-        type="button"
-        class="md:hidden p-2 -mr-2 text-text-secondary hover:text-text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 rounded"
-        :aria-label="isMenuOpen ? 'Close menu' : 'Open menu'"
-        :aria-expanded="isMenuOpen"
-        aria-controls="mobile-menu"
-        @click="isMenuOpen = !isMenuOpen"
-      >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path v-if="isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
+        <ReadingFontToggle />
+
+        <button
+          ref="menuButton"
+          type="button"
+          class="lg:hidden p-2 -mr-2 text-text-secondary hover:text-text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 rounded"
+          :aria-label="isMenuOpen ? 'Close menu' : 'Open menu'"
+          :aria-expanded="isMenuOpen"
+          aria-controls="mobile-menu"
+          @click="isMenuOpen = !isMenuOpen"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path v-if="isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
     </nav>
 
     <nav
@@ -106,8 +115,8 @@ onBeforeUnmount(() => {
       id="mobile-menu"
       ref="mobileMenu"
       aria-label="Mobile navigation"
-      class="md:hidden fixed left-0 right-0 bg-bg-primary z-50"
-      :style="{ top: `${headerHeight}px`, height: `calc(100dvh - ${headerHeight}px)` }"
+      class="lg:hidden fixed left-0 right-0 bg-bg-primary z-50"
+      :style="{ top: `${menuTop}px`, height: `calc(100dvh - ${menuTop}px)` }"
     >
       <ul class="flex flex-col py-4">
         <li v-for="item in navItems" :key="item.href">
@@ -119,6 +128,8 @@ onBeforeUnmount(() => {
           >{{ item.label }}</NuxtLink>
         </li>
       </ul>
+      <div class="mx-6 border-t border-border-subtle" />
+      <ReadingFontToggle variant="row" class="mt-4" />
     </nav>
   </header>
 </template>

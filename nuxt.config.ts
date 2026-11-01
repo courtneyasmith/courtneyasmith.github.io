@@ -19,6 +19,10 @@ export default defineNuxtConfig({
           crossorigin: '',
         },
       ],
+      script: [
+        // Applies a saved reading-font choice before first paint so a returning reader never sees Literata flash; storage access throws when it is blocked
+        { innerHTML: "try{if(localStorage.getItem('reading-font')==='lexend')document.documentElement.dataset.readingFont='lexend'}catch{}" },
+      ],
     },
   },
   css: ['~/assets/css/main.css'],

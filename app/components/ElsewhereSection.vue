@@ -64,9 +64,20 @@
   transition: background-size 400ms cubic-bezier(0.22, 1, 0.36, 1), color 250ms ease-out, transform 250ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+/* Pills are short labels, so the reading font's extra spacing (ReadingFontToggle) stays off them and Boris Cherny's still fits one line at 360px. */
+:root[data-reading-font='lexend'] .pill {
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+
+/* On a screen too narrow for a pill, its role wraps in balanced lines, never the name. */
+.pill-name {
+  white-space: nowrap;
+}
+
 /* Roles stay visible: revealing them on hover widened the pill, which re-wrapped the row out from under the cursor and flickered. */
 .pill-role {
-  white-space: nowrap;
+  text-wrap: balance;
   padding-left: 0.5rem;
   font-size: 0.8125rem;
   font-weight: 400;

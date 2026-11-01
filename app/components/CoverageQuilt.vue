@@ -419,10 +419,12 @@ sup a {
 }
 
 /* The label column gives way before the cells do, so every cell stays a 44px target at 360px; the narrow fifth track is the gutter between single-source and multi-source */
+/* Labels never drop below 4.375rem, the width "adolescents" needs; below the grid's minimum width (those labels, five 2.75rem cells, the 0.5rem seam and six 2px gaps) the grid widens evenly into the page gutters instead of running off the right edge, as it did at 320px */
 .q {
   display: grid;
-  grid-template-columns: minmax(4rem, 5.75rem) repeat(3, minmax(2.75rem, 1fr)) 0.5rem repeat(2, minmax(2.75rem, 1fr));
+  grid-template-columns: minmax(4.375rem, 5.75rem) repeat(3, minmax(2.75rem, 1fr)) 0.5rem repeat(2, minmax(2.75rem, 1fr));
   gap: 2px;
+  margin-inline: min(0px, (100cqw - (18.625rem + 12px)) / 2);
 }
 
 .q-gutter {
@@ -939,6 +941,14 @@ button.cell:focus-visible {
 
   .chips li {
     flex: none;
+  }
+
+  /* In the reading font (ReadingFontToggle) the grid labels drop its extra spacing and step down to 11px, or "adolescents" and "+ fields" overrun their 44px columns on a phone; Lexend's taller x-height keeps 11px legible */
+  :root[data-reading-font='lexend'] .q-head,
+  :root[data-reading-font='lexend'] .q-row {
+    font-size: 0.6875rem;
+    letter-spacing: normal;
+    word-spacing: normal;
   }
 
   /* A mouse has no swipe, so a narrow desktop window keeps a thin scrollbar in the border color */
