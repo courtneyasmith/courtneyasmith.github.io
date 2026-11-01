@@ -29,7 +29,7 @@ export const researchThemes: ResearchDirection[] = [
   },
   {
     id: 'transgender-dermatology',
-    title: 'Dermatologic Care for Transgender Patients',
+    title: 'Dermatologic Care for Transgender Persons',
     description:
       'National studies characterizing acne, hidradenitis suppurativa, and hair removal outcomes in transgender individuals prescribed gender-affirming hormone therapy.',
     focus: 'Epidemiology and clinical management in an underrepresented population',
